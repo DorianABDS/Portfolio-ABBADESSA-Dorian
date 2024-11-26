@@ -15,17 +15,19 @@
 html, body {
     font-size: 19.3px;
     color: rgba(0, 0, 0, .87);
+    background-color: #fff;
     font-family: "Montserrat", sans-serif;
     line-height: 1.8;
     font-weight: 400;
 }
 
 .navbar {
-    background: rgb(145, 145, 145);
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px rgb(0, 0, 0);;
     top: 0;
     left: 0;
-    height: 76px;
+    height: 50px;
     width: auto;
     position: fixed;
     padding-left: 30px;
@@ -38,7 +40,7 @@ html, body {
 }
 
 .navbar a {
-    color: #353535;
+    color: #292929;
     font-weight: 700;
     display: inline;
 }
@@ -80,13 +82,25 @@ html, body {
 .navbar .menu-hamburger {
     display: none;
     position: absolute;
-    top: 22px;
+    top: 8px;
     right: 30px;
     width: 30px;
 }
 
 .social a {
     border: solid;
+}
+
+.accueil {
+    padding-top: 100px;
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.contrainer-accueil {
+    padding-left: 20px;
 }
 
 @media  screen and (max-width: 814px) {
@@ -103,9 +117,13 @@ html, body {
     }
 
     .navbar .logo {
-        position: absolute;
-        top: 22px;
-        left: 30px;
+        padding-left: 20px;
+    }
+
+    .navbar .logo img {
+        display: flex;
+        align-items: center;
+        width: 30px;
     }
 
     .nav-links {
@@ -132,5 +150,17 @@ html, body {
     .navbar .nav-links ul li {
         margin: 15px 0;
         font-size: 1.2em;
+    }
+    
+    .accueil h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #292929;
+    }
+
+    .accueil h1 {
+        color: #fff;
+        letter-spacing: -2px;
+        font-weight: 700;
     }
 }
