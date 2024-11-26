@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="index.html" class="logo"><img src="/src/img/Logo Div noir.png" alt=""></a>
+            <a href="index.html" class="logo"><img src="/src/img/Logo plat Div noir.png" alt=""></a>
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
@@ -33,8 +33,28 @@
         <section class="accueil">
             <div class="contrainer-accueil">
                 <h2>Hi, I'AM</h2>
-                <h1>ABBADESSA Dorian</h1>
+                <h1><span>ABBADESSA Dorian</span></h1>
                 <p>Concepteur-développer Web/Mobile</p>
+                <!-- <a href="#">télécharger mon cv</a> -->
+                <button>
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path
+                            d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z"
+                            fill="currentColor"
+                        />
+                        <path
+                            d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z"
+                            fill="currentColor"
+                        />
+                        </svg>
+                    télécharger mon cv
+                  </button>
             </div>
         </section>
     </main>
@@ -42,7 +62,6 @@
 <script>
     const menuHamburger = document.querySelector(".menu-hamburger")
     const navLinks = document.querySelector(".nav-links")
-    const social = document.querySelector(".social")
 
     menuHamburger.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile-menu')
