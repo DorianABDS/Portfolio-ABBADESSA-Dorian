@@ -86,24 +86,17 @@ html, body {
     width: 30px;
 }
 
-.social a {
-    border: solid;
-}
-
 .accueil {
-    padding-top: 100px;
+    padding-top: 80px;
     margin-top: 50px;
     width: 100%;
     height: 100vh;
 }
 
-.contrainer-accueil {
-    padding-left: 20px;
-}
-
 button {
     border: none;
     display: flex;
+    margin-right: 20px;
     padding: 0.75rem 1.5rem;
     background: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(255,136,0,1) 100%);
     color: #ffffff;
@@ -141,7 +134,76 @@ button {
     height: 1.25rem;
   }
 
+.about-me {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .wrapper {
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+
 @media  screen and (max-width: 814px) {
+    html, body {
+        padding: 0 20px;
+    }
+
     .navbar .menu-hamburger {
         display: block;
     }
@@ -190,6 +252,10 @@ button {
         font-size: 1.2em;
     }
     
+    .accueil {
+        height: 100%;
+    }
+
     .accueil h2 {
         font-size: 22px;
         font-weight: 600;
@@ -198,7 +264,6 @@ button {
 
     .accueil h1 {
         display: inline-block;
-        padding-right: 20px;
         line-height: 100%;
         font-size: 40px;
         letter-spacing: -2px;
@@ -209,8 +274,69 @@ button {
     }
 
     .accueil p {
+        height: 80px;
         line-height: 150%;
-        padding-right: 20px;
-        margin-bottom: 30px;
-    }    
+        margin-bottom: 80px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social a {
+        display: flex;
+        justify-content: center;
+        margin: 0 10px;
+        width: 30px;
+    }
+
+    .container-about-me h1 {
+        font-size: 12;
+        background: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(255,136,0,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .container-about-me h2 {
+        line-height: 5px;
+        font-size: 16px;
+    }
+
+    .about-me {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 65%;
+    }
+    
+    .me {
+        margin-top: 40px;
+        background-color: #292929;
+        height: 400px;
+        width: 300px;
+        border-radius: 0.5rem;
+    }
+
+    .about-me p {
+        margin-top: 30px;
+        text-align: start;
+        
+    }
+    
+    .about-me p span {
+        margin-top: 30px;
+        background: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(255,136,0,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .wrapper {
+        padding-top: 0;
+    }
+
+    button {
+        margin-top: 30px;
+    }
 }
