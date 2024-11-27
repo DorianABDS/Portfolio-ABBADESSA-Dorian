@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfolio, ABBADESSA Dorian, Web developper">
+    <title>ABBADESSA Dorian - Portfolio</title>
+    <link rel="shortcute icon" href="/src/img/Logo Div.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+<body class="darkmode">
+    <header class="header">
+        <nav class="navbar">
+          <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+          </button>
+            <a href="index.html" class="logo"><img src="/src/img/Logo plat Div noir.png" alt=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div> 
+            <img src="/src/img/bars-solid.svg" alt="menu hamburger" class="menu-hamburger">
+        </nav>
+        <!-- <div class="social">
+            <a href="#" title="Facebook"><img src="/src/img/icone Github.png" alt=""></a>
+            <a href="#" title="Twitter"><img src="src/img/icone Linkedin.png" alt=""></a>
+        </div> -->
+    </header>
+    <main>
+        <section class="accueil">
+            <div class="container-accueil">
+                <h2>Hi, I'AM</h2>
+                <h1><span>ABBADESSA Dorian</span></h1>
+                <p>Concepteur-développer Web/Mobile</p>
+                <div class="social">
+                  <ul class="wrapper">
+                    <li class="icon facebook">
+                      <span class="tooltip">Facebook</span>
+                      <img src="/src/img/github-brands-solid.svg" alt="">
+                    </li>
+                    <li class="icon twitter">
+                      <span class="tooltip">Twitter</span>
+                      <img src="/src/img/linkedin-brands-solid.svg" alt="">
+                    </li>
+                  </ul>
+        </section>
+        <section class="about-me">
+            <div class="container-about-me">
+                <h2>Présentation</h2>
+                <h1><span>À propos de moi</span></h1>
+            </div>
+            <div class="card-about-me"></div>
+            <div class="texte-about-me"><p>🌍 Étudiant en première année de <span>bachelor en développement web</span> à <span>LaPlateforme</span> à Martigues, étant très <span>créatif</span> et <span>optimiste</span>
+              <br>
+              🎯 Mon <span>objectif</span> est de rechercher une <span>alternance</span> dans le but de perfectionner mes <span>compétences techniques</span> en développement web et mobile, en vue de mettre en pratique ces compétences pour  concevoir des interfaces modernes, fonctionnelles et adaptées aux besoins des utilisateurs. J’ai pour <span>objectif</span> de devenir un <span>concepteur d’application web et mobile</span>.
+              <br>
+              🧠 J’aime partager mes <span>connaissances</span>, travailler sur tout type de <span>projets</span> ainsi que mener à bien les <span>missions</span> qui me sont <span>confiés</span>.
+              <br>
+              Bienvenue sur mon <span>portfolio</span>, je vous y invite et vous ouvres les portes de mon <span>univer</span>.
+              </p></div>
+        </section>
+        <button class="button-cv">
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <path
+                    d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z"
+                    fill="currentColor"
+                />
+                <path
+                    d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z"
+                    fill="currentColor"
+                />
+                </svg>
+            Download CV
+          </button>
+    </div>
+    </main>
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
