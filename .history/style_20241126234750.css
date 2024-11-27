@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(/src/font/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    font-size: 19.3px;
+    color: rgba(0, 0, 0, .87);
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.navbar {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px rgb(0, 0, 0);;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: auto;
+    position: fixed;
+    padding-left: 30px;
+    padding-right: 61px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar a {
+    color: #292929;
+    font-weight: 700;
+    display: inline;
+}
+
+.navbar .nav-links ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar .nav-links ul li a:hover::after {
+    transform: scale(1);
+}
+
+.navbar .logo {
+    transform: none;
+    font-weight: 700;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links ul li {
+    display: flex;
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li img {
+    display: flex;
+    padding: -20px;
+    margin-left: -23px;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    width: 30px;
+}
+
+.social a {
+    border: solid;
+}
+
+.accueil {
+    padding-top: 100px;
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.contrainer-accueil {
+    padding-left: 20px;
+}
+
+.contrainer-accueil a {
+    color: #292929;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 19.3px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #E0984A;
+}
+
+@media  screen and (max-width: 814px) {
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        padding-left: 20px;
+    }
+
+    .navbar .logo img {
+        display: flex;
+        align-items: center;
+        width: 50px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 15px 0;
+        font-size: 1.2em;
+    }
+    
+    .accueil h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #292929;
+    }
+
+    .accueil h1 {
+        display: inline-block;
+        padding-right: 20px;
+        line-height: 100%;
+        font-size: 40px;
+        letter-spacing: -2px;
+        font-weight: 800;
+        background: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(255,136,0,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .accueil p {
+        line-height: 150%;
+        padding-right: 20px;
+    }
+
+    .contrainer-accueil a {
+        margin-top: 0px;
+    }
+}

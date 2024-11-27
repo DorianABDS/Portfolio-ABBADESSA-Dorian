@@ -1,0 +1,1 @@
+let darmode = localStorage.getItem('darkmode')
