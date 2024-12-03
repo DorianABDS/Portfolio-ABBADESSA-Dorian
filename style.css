@@ -27,7 +27,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-
 }
 
 html,
@@ -146,46 +145,65 @@ body {
     height: 100vh;
 }
 
-.button-cv {
-    border: none;
+.social {
     display: flex;
-    margin-right: 20px;
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
-    color: #ffffff;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    font-weight: 700;
-    text-align: center;
+    flex-direction: row;
+}
+
+#linkedin {
+    margin: 0 5px;
+}
+
+.btn-social {
+    display: grid;
+    place-items: center;
+    background: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
     cursor: pointer;
-    text-transform: uppercase;
-    vertical-align: middle;
-    align-items: center;
-    border-radius: 0.5rem;
-    user-select: none;
-    gap: 0.75rem;
-    box-shadow:
-        0 4px 6px -1px #488aec31,
-        0 2px 4px -1px #488aec17;
-    transition: all 0.6s ease;
+    transition: transform 0.5s;
 }
 
-.button-cv:hover {
-    box-shadow:
-        0 10px 15px -3px #488aec4f,
-        0 4px 6px -2px #488aec17;
+.btn-social:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
 }
 
-.button-cv:focus,
+.btn-social svg {
+    transition: transform 0.5s;
+}
+
+.btn-social:hover svg {
+    transform: scale(0.9);
+    fill: #333333;
+}
+
+.button-cv {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
 .button-cv:active {
-    opacity: 0.85;
-    box-shadow: none;
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-.button-cv svg {
-    width: 1.25rem;
-    height: 1.25rem;
-}
 
 .about-me {
     display: flex;
@@ -261,44 +279,23 @@ body {
 }
 
 .button-projets {
-    border: none;
     display: flex;
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
-    color: #ffffff;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    font-weight: 700;
-    text-align: center;
+    color: #090909;
+    padding: 12.6px 30.6px;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
     cursor: pointer;
-    text-transform: uppercase;
-    vertical-align: middle;
-    align-items: center;
-    border-radius: 0.5rem;
-    user-select: none;
-    gap: 0.75rem;
-    box-shadow:
-        0 4px 6px -1px #488aec31,
-        0 2px 4px -1px #488aec17;
-    transition: all 0.6s ease;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
-.button-projets:hover {
-    box-shadow:
-        0 10px 15px -3px #488aec4f,
-        0 4px 6px -2px #488aec17;
-}
-
-.button-projets:focus,
 .button-projets:active {
-    opacity: 0.85;
-    box-shadow: none;
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-.button-projets svg {
-    width: 1.25rem;
-    height: 1.25rem;
-}
 
 input:focus~label,
 textarea:focus~label,
@@ -320,19 +317,39 @@ textarea:valid~label {
 }
 
 .footer {
+    background: rgb(121, 121, 121);
+    left: 0;
     height: 100px;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: #6e6e6e;
-    color: #ff0000;
+    position: absolute;
+}
+
+.container-footer {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.container-social-footer {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-footer img {
+    width: 30px;
 }
 
 @media screen and (max-width: 814px) {
 
-    html,
     body {
-        padding: 0 20px;
+        padding: 20px;
+        padding-bottom: 30px;
+
     }
 
     .navbar .menu-hamburger {
@@ -412,7 +429,7 @@ textarea:valid~label {
 
     .social {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .social a {
@@ -744,7 +761,5 @@ textarea:valid~label {
         font-size: 16px;
     }
 
-    .footer {
-        width: 100%;
-    }
+
 }
