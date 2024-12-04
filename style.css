@@ -316,33 +316,68 @@ textarea:valid~label {
     border-radius: 4px;
 }
 
-.footer {
-    background: rgb(121, 121, 121);
-    left: 0;
-    height: 100px;
-    width: 100%;
-    position: absolute;
-}
-
-.container-footer {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-}
-
-.container-social-footer {
-    display: flex;
-    /* flex-direction: column; */
-}
-
-.social-footer {
+/* TODO: CSS of Footer */
+.footer-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+    color: black;
+
+    .left-content {
+        width: 25%;
+    }
+
+    .right-content.social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* gestion des images */
+    }
 }
 
-.social-footer img {
-    width: 30px;
+.text-justify {
+    font-size: 16px;
+    text-align: justify;
 }
+
+.copyright {
+    text-align: center;
+    padding: 2%;
+}
+
+/* TODO: End CSS of Footer */
+
+/* TODO: CSS of DarkMode */
+/* Masquer la checkbox visuellement mais la garder dans le DOM */
+#theme-toggle {
+    display: none;
+}
+  
+/* Les icônes (lune et soleil) sont initialement visibles, mais on peut en cacher une selon le mode */
+.theme-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+  
+.theme-icon.sun {
+    display: block;
+}
+  
+.theme-icon.moon {
+    display: none;
+}
+  
+/* Lorsque le mode sombre est activé, on cache l'icône du soleil et on montre l'icône de la lune */
+body.darkmode .theme-icon.sun {
+    display: none;
+}
+  
+body.darkmode .theme-icon.moon {
+    display: block;
+}
+
+/* TODO: End CSS of DarkMode */
 
 @media screen and (max-width: 814px) {
 
@@ -760,6 +795,4 @@ textarea:valid~label {
         line-height: 5px;
         font-size: 16px;
     }
-
-
 }
