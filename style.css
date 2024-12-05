@@ -45,7 +45,6 @@ body {
     padding: 0;
     border: none;
     border-radius: 50%;
-    background-color: var(--base-variant);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,9 +68,8 @@ body {
 }
 
 .navbar {
-    background: rgb(255, 255, 255);
+    background: var(--base-color);
     box-shadow: 0 0 5px rgb(0, 0, 0);
-    ;
     top: 0;
     left: 0;
     height: 50px;
@@ -187,7 +185,7 @@ body {
     fill: #333333;
 }
 
-.button-cv {
+button {
     color: #090909;
     padding: 0.7em 1.7em;
     font-size: 18px;
@@ -197,12 +195,12 @@ body {
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-}
-
-.button-cv:active {
+  }
+  
+  button:active {
     color: #666;
     box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
-}
+  }
 
 
 .about-me {
@@ -278,6 +276,8 @@ body {
     color: #fff;
 }
 
+
+
 .button-projets {
     display: flex;
     color: #090909;
@@ -296,7 +296,6 @@ body {
     box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-
 input:focus~label,
 textarea:focus~label,
 input:valid~label,
@@ -314,25 +313,39 @@ textarea:valid~label {
     margin: 1rem 0;
     position: relative;
     border-radius: 4px;
+    color: #090909;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
+
+.styled-input:active {
+    color: #666;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
 
 /* TODO: CSS of Footer */
 .footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1%;
+    position: absolute;
+    left: 0;
+    width: 100%;
     color: black;
+    background-color: #7b7b7b;
 
     .left-content {
-        width: 25%;
+        width: 50%;
     }
 
     .right-content.social-media {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* gestion des images */
     }
 }
 
@@ -343,7 +356,6 @@ textarea:valid~label {
 
 .copyright {
     text-align: center;
-    padding: 2%;
 }
 
 /* TODO: End CSS of Footer */
@@ -387,8 +399,21 @@ body.darkmode .theme-icon.moon {
 
     }
 
+    #theme-switch {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 70px;
+    }
+
     .navbar .menu-hamburger {
         display: block;
+        position: absolute;
+        top: 8px;
+        right: 30px;
+        width: 30px;
     }
 
     .nav-links.mobile-menu {
@@ -400,7 +425,7 @@ body.darkmode .theme-icon.moon {
     }
 
     .navbar .logo {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .navbar .logo img {
@@ -470,7 +495,7 @@ body.darkmode .theme-icon.moon {
     .social a {
         display: flex;
         justify-content: center;
-        margin: 0 10px;
+        margin: 0 5px;
         width: 30px;
     }
 
@@ -613,7 +638,6 @@ body.darkmode .theme-icon.moon {
         display: grid;
         grid-template-columns: 100px 100px;
         grid-template-rows: auto;
-        /* grid-gap: 12px; */
         gap: 25px;
         padding: 0;
         margin: 12px;
@@ -624,7 +648,6 @@ body.darkmode .theme-icon.moon {
         margin: 0;
         color: #fff;
         margin: 0;
-        /* display: block; */
         box-sizing: border-box;
         background: rgba(217, 217, 217, 0.58);
         border: 1px solid white;
@@ -733,10 +756,16 @@ body.darkmode .theme-icon.moon {
         border: 0;
         width: 100%;
         font-size: 1rem;
-        background-color: #2d2d2d;
+        background-color: #E8E8E8;
         color: white;
         border-radius: 4px;
     }
+
+    input:focus,
+    textarea:focus {
+        color: #666;
+        box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+      }
 
     input:focus,
     textarea:focus {
@@ -752,7 +781,7 @@ body.darkmode .theme-icon.moon {
 
     textarea {
         width: 100%;
-        min-height: 15em;
+        min-height: 10em;
     }
 
     .input-container {
@@ -794,5 +823,59 @@ body.darkmode .theme-icon.moon {
         text-align: center;
         line-height: 5px;
         font-size: 16px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .left-content {
+        display: none;
+        justify-content: center;
+        padding-top: 20px ;
+    }
+
+    .left-content h2 {
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .left-content p {
+        font-size: 14px;
+    }
+
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .right-content h2 {
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    .right-content img {
+        width: 25px;
+        margin: 5px;
+    }
+
+    .right-content.social-media a {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .copyright {
+        font-size: 12px;
+        margin-bottom: 20px;
     }
 }
