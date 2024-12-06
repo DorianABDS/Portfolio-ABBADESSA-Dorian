@@ -139,11 +139,21 @@ body {
     width: 30px;
 }
 
+.container-accueil img {
+    height: 30px;
+}
+
 .accueil {
     padding-top: 80px;
     margin-top: 50px;
     width: 100%;
     height: 100vh;
+}
+
+.accueil h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #292929;
 }
 
 .social {
@@ -573,12 +583,6 @@ body.darkmode .theme-icon.moon {
 
     .accueil {
         height: 100%;
-    }
-
-    .accueil h2 {
-        font-size: 22px;
-        font-weight: 600;
-        color: #292929;
     }
 
     .accueil h1 {
