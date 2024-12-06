@@ -148,7 +148,27 @@ body {
 
 .social {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+}
+
+
+@keyframes up_3951 {
+    100% {
+        transform: translateY(-2em);
+    }
+}
+
+@keyframes jump_3951 {
+    50% {
+        transform-origin: center;
+        transform: translateY(-0.5em) rotate(-8deg);
+    }
+
+    100% {
+        transform-origin: center;
+        transform: translateY(0em);
+    }
 }
 
 #linkedin {
@@ -188,7 +208,7 @@ body {
     fill: #333333;
 }
 
-button {
+.button-cv {
     display: flex;
     align-items: center;
     color: #090909;
@@ -201,7 +221,7 @@ button {
     transition: all 0.3s;
 }
 
-button:hover {
+.button-cv:hover {
     color: #fff;
     background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
 }
@@ -209,6 +229,86 @@ button:hover {
 .button-cv p {
     align-items: flex-end;
     margin-left: 10px;
+}
+
+.button-envoyer {
+    display: flex;
+    align-items: center;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+}
+
+.button-envoyer:hover {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+.button-envoyer p {
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+.linkedin {
+    margin-right: 20px;
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+}
+
+.linkedin span {
+    margin: 10px;
+}
+
+.linkedin:hover {
+    color: #fff;
+    border: 1px solid #0077b5;
+    background-color: #0077b5;
+}
+
+.github {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+}
+
+.github span {
+    margin: 10px;
+}
+
+.github:hover {
+    color: #fff;
+    border: 1px solid #24292e;
+    background-color: #24292e;
 }
 
 .about-me {
@@ -286,8 +386,9 @@ button:hover {
 
 .button-projets {
     display: flex;
+    align-items: center;
     color: #090909;
-    padding: 12.6px 30.6px;
+    padding: 0.7em 1.7em;
     font-size: 18px;
     border-radius: 0.5em;
     background: #e8e8e8;
@@ -296,8 +397,14 @@ button:hover {
     transition: all 0.3s;
 }
 
-.button-projets:active {
-    color: #666;
+.button-projets:hover {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+.button-projets p {
+    align-items: flex-end;
+    margin-left: 10px;
 }
 
 input:focus~label,
@@ -323,12 +430,10 @@ textarea:valid~label {
     background: #e8e8e8;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 .styled-input:active {
     color: #666;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 /* TODO: CSS of Footer */
@@ -896,6 +1001,7 @@ body.darkmode .theme-icon.moon {
     }
 
     .copyright {
+        font-weight: 600;
         font-size: 12px;
         margin-bottom: 20px;
     }
