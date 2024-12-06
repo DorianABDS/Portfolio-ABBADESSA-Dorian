@@ -10,6 +10,7 @@
     --secondary-text: #232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
+    --shadow-color: #c5c5c5, #ffffff;
 }
 
 .darkmode {
@@ -19,6 +20,8 @@
     --secondary-text: #707070;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
+    --shadow-color: #191919, #3c3c3c;
+
 }
 
 * {
@@ -159,7 +162,7 @@ body {
     border-radius: 10px;
     margin-right: 10px;
     padding: 5px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    box-shadow: 6px 6px 10px -1px #00000026,
         -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -186,6 +189,8 @@ body {
 }
 
 button {
+    display: flex;
+    align-items: center;
     color: #090909;
     padding: 0.7em 1.7em;
     font-size: 18px;
@@ -194,14 +199,17 @@ button {
     cursor: pointer;
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-  }
-  
-  button:active {
-    color: #666;
-    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
-  }
+}
 
+button:hover {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
+}
+
+.button-cv p {
+    align-items: flex-end;
+    margin-left: 10px;
+}
 
 .about-me {
     display: flex;
@@ -276,8 +284,6 @@ button {
     color: #fff;
 }
 
-
-
 .button-projets {
     display: flex;
     color: #090909;
@@ -288,12 +294,10 @@ button {
     cursor: pointer;
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 .button-projets:active {
     color: #666;
-    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
 input:focus~label,
@@ -325,7 +329,7 @@ textarea:valid~label {
 .styled-input:active {
     color: #666;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-  }
+}
 
 /* TODO: CSS of Footer */
 .footer-container {
@@ -367,26 +371,26 @@ textarea:valid~label {
 #theme-toggle {
     display: none;
 }
-  
+
 /* Les icônes (lune et soleil) sont initialement visibles, mais on peut en cacher une selon le mode */
 .theme-icon {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-  
+
 .theme-icon.sun {
     display: block;
 }
-  
+
 .theme-icon.moon {
     display: none;
 }
-  
+
 /* Lorsque le mode sombre est activé, on cache l'icône du soleil et on montre l'icône de la lune */
 body.darkmode .theme-icon.sun {
     display: none;
 }
-  
+
 body.darkmode .theme-icon.moon {
     display: block;
 }
@@ -570,6 +574,8 @@ body.darkmode .theme-icon.moon {
     }
 
     .button-cv {
+        display: flex;
+        justify-content: center;
         margin-top: 30px;
     }
 
@@ -717,6 +723,16 @@ body.darkmode .theme-icon.moon {
         margin-top: 20px;
     }
 
+    .button-projets p {
+        width: 75px;
+        margin-right: 20px;
+        text-transform: uppercase;
+    }
+
+    .button-projets svg {
+        width: 30px;
+    }
+
     .submit-btn {
         width: 100%;
         float: none;
@@ -767,7 +783,7 @@ body.darkmode .theme-icon.moon {
     textarea:focus {
         color: #666;
         box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
-      }
+    }
 
     input:focus,
     textarea:focus {
@@ -841,7 +857,7 @@ body.darkmode .theme-icon.moon {
     .left-content {
         display: none;
         justify-content: center;
-        padding-top: 20px ;
+        padding-top: 20px;
     }
 
     .left-content h2 {
