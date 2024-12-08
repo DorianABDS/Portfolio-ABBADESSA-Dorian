@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="darkmode.js" defer></script>
     <script type="text/javascript" src="hamburger.js" defer></script>
+    <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
+    <!-- **HEADER -->
     <header class="header">
+        <!-- Barre de navigation -->
         <nav class="navbar">
+            <!-- Darkmode -->
             <label id="theme-switch">
                 <input type="checkbox" id="theme-toggle" style="display: none;">
                 <!-- SVG pour le soleil (mode clair) -->
@@ -25,7 +29,9 @@
                   <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
                 </svg>
             </label>
+            <!-- Logo -->
             <a href="index.html" class="logo"><img src="/src/img/Logo plat Div noir.png" alt=""></a>
+            <!-- Lien de anvigation -->
             <div class="nav-links">
                 <ul> 
                     <li><a href="#accueil">Accueil</a></li>
@@ -35,15 +41,20 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+            <!-- Logo hamburger -->
             <img src="/src/img/bars-solid.svg" alt="menu hamburger" class="menu-hamburger">
         </nav>
     </header>
+    <!-- **HEADER -->
+     <!-- **MAIN -->
     <main>
+        <!-- Accueil -->
         <section class="accueil" id="accueil">
             <div class="container-accueil">
-                <h2>Hi, I'AM</h2>
+                <h2>Hi, I' Am</h2>
                 <h1><span>ABBADESSA Dorian</span></h1>
                 <p>Concepteur-développer Web/Mobile</p>
+                <!-- Réseaux sociaux -->
                 <div class="social">
                     <button class="linkedin">
                         <svg
@@ -74,12 +85,15 @@
                       </button>
                 </div>
         </section>
+        <!-- À propos -->
         <section class="about-me" id="about-me">
             <div class="container-about-me">
                 <h2>Présentation</h2>
                 <h1><span>À propos de moi</span></h1>
             </div>
+            <!-- Photo -->
             <div class="card-about-me"></div>
+            <!-- Biodescription -->
             <div class="texte-about-me"><p>🌍 Étudiant en première année de <span>bachelor en développement web</span> à <span>LaPlateforme</span> à Martigues, étant très <span>créatif</span> et <span>optimiste</span>
               <br>
               🎯 Mon <span>objectif</span> est de rechercher une <span>alternance</span> dans le but de perfectionner mes <span>compétences techniques</span> en développement web et mobile, en vue de mettre en pratique ces compétences pour  concevoir des interfaces modernes, fonctionnelles et adaptées aux besoins des utilisateurs. J’ai pour <span>objectif</span> de devenir un <span>concepteur d’application web et mobile</span>.
@@ -89,6 +103,7 @@
               Bienvenue sur mon <span>portfolio</span>, je vous y invite et vous ouvres les portes de mon <span>univer</span>.
               </p></div>
         </section>
+        <!-- Bouton de téléchargement du CV -->
         <button class="button-cv">
             <svg
                 width="24"
@@ -106,11 +121,13 @@
             <p>Download CV</p>
           </button>
         </div>
+        <!-- Compétences -->
         <section class="skills" id="skills">
         <div class="container-skills">
             <h2>Mes compétences</h2>
             <h1><span>Skills</span></h1>
         </div>
+        <!-- Mes compétences -->
         <div class="container-card-skills">
         <div class="card-skills">
             <h3>Développement Web</h3>
@@ -159,35 +176,42 @@
         </div>
         </div>
         </section>
+        <!-- Projets -->
         <section class="projets" id="projets">
         <div class="container-projets">
             <h2>Mes réalisations</h2>
             <h1><span>Projets</span></h1>
         </div>
+        <!-- Mon premier projet -->
         <article class="box-projets">
             <img src="/src/img/Macbook 16.png" alt="">
             <h3>projet 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque soluta iure reprehenderit eum autem vitae harum tenetur veritatis.</p>
+            <!-- En savoir plus -->
             <button class="button-projets">
                 <p>voir plus</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
               </button>
         </article>
+                <!-- Mon deuxieme projet -->
         <article class="box-projets">
             <img src="/src/img/Macbook 16.png" alt="">
             <h3>projet 2</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque soluta iure reprehenderit eum autem vitae harum tenetur veritatis.</p>
+            <!-- En savoir plus -->
             <button class="button-projets">
                 <p>voir plus</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
               </button>
         </article>
     </section>
+    <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container-contact">
             <h2>Message</h2>
             <h1><span>Contact</span></h1>
         </div>
+        <!-- Formulaire de contact -->
         <div class="container">
             <div class="row input-container">
                     <div class="col-xs-12">
@@ -214,6 +238,7 @@
                             <label>Message</label>
                         </div>
                     </div>
+                    <!-- Bouton d'envoi -->
                     <div>
                         <button class="button-envoyer">Envoyez un message</button>
                     </div>
@@ -221,19 +246,24 @@
         </div>
     </section>
     </main>
+    <!-- **MAIN -->
+    <!-- **FOOTER -->
     <footer>
         <div class="footer-container">
+            <!-- partie de gauche -->
             <div class="left-content">
                 <h2>Dorian</h2>
             </div>
-
+            <!-- partie de droite -->
             <div class="right-content">
                 <h2>Social</h2>
+                <!-- Réseaux sociaux du footer -->
                 <div class="social-media">
                     <a href="https://www.linkedin.com/feed/"><img src="/src/img/linkedin-brands-solid.svg" width="20" alt=""></a>
                     <a href="https://github.com/DorianABDS"><img src="/src/img/github-brands-solid.svg" width="20" alt=""></a>
                 </div>
             </div>
+            <!-- copyright -->
             <div class="copyright">
                 <p>Copyright©2024 - Dorian ABBADESSA.</p>
             </div>
