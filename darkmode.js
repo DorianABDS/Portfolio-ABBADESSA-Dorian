@@ -27,4 +27,4 @@ themeSwitch.addEventListener("click", () => {
     } else {
         disableDarkmode(); // Si la checkbox est décochée, désactiver le mode sombre
     }
-});
+}); 
