@@ -31,8 +31,7 @@
 
 html,
 body {
-    /* ?efz */
-    color: #58bcff;
+    color: var(--text-color);
     font-size: 19.3px;
     color: var(--text-color);
     background-color: var(--base-color);
@@ -105,6 +104,17 @@ body.darkmode .theme-icon.moon {
 }
 
 /* *darkmode */
+/* *scroll-bar */
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: rgb(9, 9, 9, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
+    border-radius: 25px;
+}
 
 .navbar {
     background: var(--base-color);
@@ -212,7 +222,8 @@ body.darkmode .theme-icon.moon {
 .container-accueil {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 60px;
+    margin-bottom: 20px;
 }
 
 .container-accueil img {
@@ -256,6 +267,7 @@ body.darkmode .theme-icon.moon {
 }
 
 .github {
+    margin-right: 20px;
     background: transparent;
     position: relative;
     padding: 5px 15px;
@@ -283,10 +295,36 @@ body.darkmode .theme-icon.moon {
     background-color: #24292e;
 }
 
+.button-cv {
+    margin-right: 20px;
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--base-color);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: var(--text-color);
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
+
+}
+
+.button-cv span {
+    margin: 10px;
+}
+
 /* *accueil */
 /* *à propos */
 
 .about-me {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,7 +354,6 @@ body.darkmode .theme-icon.moon {
     backdrop-filter: blur(6px);
     border-radius: 0.5rem;
     text-align: center;
-    cursor: pointer;
     transition: all 0.5s;
     display: flex;
     align-items: center;
@@ -332,7 +369,6 @@ body.darkmode .theme-icon.moon {
 
 .about-me p {
     font-size: 16px;
-    margin-top: 30px;
     text-align: start;
 }
 
@@ -348,12 +384,15 @@ body.darkmode .theme-icon.moon {
 }
 
 .about-card {
-    width: 190px;
-    height: 254px;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: auto;
     border-radius: 20px;
     background: #f5f5f5;
     position: relative;
     padding: 1.8rem;
+    margin-right: 20px;
     border: 2px solid #c3c6ce;
     transition: 0.5s ease-out;
     overflow: visible;
@@ -395,7 +434,7 @@ body.darkmode .theme-icon.moon {
    
    /*Hover*/
    .about-card:hover {
-    border-color: #008bf8;
+    border-color: rgba(255, 136, 0, 1);
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
    }
    
@@ -408,31 +447,16 @@ body.darkmode .theme-icon.moon {
     margin: 30px 0;
 }
 
-.button-cv {
-    display: flex;
-    align-items: center;
-    color: #090909;
-    padding: 0.7em 1.7em;
-    font-size: 18px;
-    border-radius: 0.5em;
-    background: #e8e8e8;
-    cursor: pointer;
-    border: 1px solid #e8e8e8;
-    transition: all 0.3s;
-}
-
-.button-cv:hover {
-    color: #fff;
-    background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
-}
-
-.button-cv p {
-    align-items: flex-end;
-    margin-left: 10px;
+.welcome {
+    margin-top: 50px;
 }
 
 /* *à propos */
 /* *skills */
+
+.skills {
+    margin-top: 100px;
+}
 
 .container-skills h1 {
     text-align: center;
@@ -450,7 +474,6 @@ body.darkmode .theme-icon.moon {
 
 .container-card-skills {
     display: flex;
-
 }
 
 .container-card-skills {
