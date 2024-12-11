@@ -811,16 +811,15 @@ textarea {
     }
 }
 /* Large (Desktop, Laptop) */
-@media screen and (max-width: 1024px) and (max-width: 1440px) {
+@media screen and (max-width: 1024px) and (max-width: 1440px) {}
 /* Medium (Tablet */
-@media screen and (max-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 769px) and (max-width: 1024px) {}
 /* Small (Mobile) */
 @media screen and (max-width: 481px) and (max-width: 768px) {}
 /* Extra Small (Mobile) */
 @media screen and (max-width: 321px) and (max-width: 480px) {}
 /* Extra Small (Mobile) < */
 @media screen and (max-width: 320px) {
-
     body {
         padding: 20px;
         padding-bottom: 50px;
