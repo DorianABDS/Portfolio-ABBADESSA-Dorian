@@ -334,6 +334,7 @@ body.darkmode .theme-icon.moon {
 }
 
 .container-about-me h1 {
+    text-align: center;
     font-size: 40px;
     background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
     -webkit-background-clip: text;
@@ -556,7 +557,6 @@ body.darkmode .theme-icon.moon {
 .container-projets h1 {
     text-align: center;
     font-size: 40px;
-    padding-bottom: 30px;
     background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -632,7 +632,6 @@ body.darkmode .theme-icon.moon {
 .container-contact h1 {
     text-align: center;
     font-size: 40px;
-    padding-bottom: 30px;
     background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
