@@ -1,5 +1,3 @@
-Mettre les variables.
-
 temps de chargement lorsqu'on ouvre mon portfolio
 
 compilation
@@ -9,4 +7,35 @@ responsive photo, skills
 
 ancrage
 
-mettre une transition sur la box-shadow de la nav 
+mettre une transition sur la box-shadow de la nav
+
+1024 > 1440px :
+- contact
+- footer
+
+769 > 1024 :
+- projet
+- contact
+- footer
+
+481 > 768 :
+- nav
+- à propos
+- projet
+- contact
+- footer
+
+321 > 480 :
+- nav
+- à propos
+- skills
+- projet
+- contact
+- footer
+
+320 < :
+- à propos
+- skills
+- projet
+- contact
+- footer
