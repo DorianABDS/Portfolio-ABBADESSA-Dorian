@@ -814,7 +814,7 @@ textarea {
     }
 
     .projets {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .contact {
@@ -837,7 +837,7 @@ textarea {
     }
 
     .projets {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .contact {
@@ -860,7 +860,7 @@ textarea {
     }
 
     .projets {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .contact {
@@ -949,7 +949,7 @@ textarea {
     }
 
     .projets {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .contact {
@@ -1063,7 +1063,7 @@ textarea {
     }
 
     .projets {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .contact {
@@ -1260,4 +1260,4 @@ textarea {
         font-size: 12px;
         margin-bottom: 20px;
     }
-} 
+}
