@@ -313,7 +313,6 @@ body.darkmode .theme-icon.moon {
     color: var(--text-color);
     text-align: center;
     background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
-
 }
 
 .button-cv span {
@@ -801,7 +800,7 @@ textarea {
 /* **FOOTER */
 
 /* Extra Large (Wide Screens) < */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
     .accueil {
         padding: 0 100px;
         padding-top: 80px;
@@ -809,15 +808,269 @@ textarea {
         width: 100%;
         height: 100vh;
     }
+
+    .box-projets img {
+        width: 60%;
+    }
+
+    .projets {
+        margin-bottom: 100px;
+    }
+
+    .contact {
+        display: none;
+        margin-top: 100px;
+    }
 }
 /* Large (Desktop, Laptop) */
-@media screen and (max-width: 1024px) and (max-width: 1440px) {}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .accueil {
+        padding: 0 100px;
+        padding-top: 80px;
+        margin-top: 50px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .box-projets img {
+        width: 70%;
+    }
+
+    .projets {
+        margin-bottom: 100px;
+    }
+
+    .contact {
+        display: none;
+        margin-top: 100px;
+    }
+}
 /* Medium (Tablet */
-@media screen and (max-width: 769px) and (max-width: 1024px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .accueil {
+        padding: 0 100px;
+        padding-top: 80px;
+        margin-top: 50px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .box-projets img {
+        width: 70%;
+    }
+
+    .projets {
+        margin-bottom: 100px;
+    }
+
+    .contact {
+        display: none;
+        margin-top: 100px;
+    }
+}
 /* Small (Mobile) */
-@media screen and (max-width: 481px) and (max-width: 768px) {}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        padding-left: 10px;
+    }
+
+    .navbar .logo img {
+        display: flex;
+        align-items: center;
+        width: 50px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: #ffffff90;
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 15px 0;
+        font-size: 1.2em;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 30px;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    #theme-switch {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 70px;
+    }
+
+    .accueil {
+        padding: 0 100px;
+        padding-top: 80px;
+        margin-top: 50px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .texte-about-me {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-projets img {
+        width: 70%;
+    }
+
+    .projets {
+        margin-bottom: 100px;
+    }
+
+    .contact {
+        display: none;
+        margin-top: 100px;
+    }
+}
 /* Extra Small (Mobile) */
-@media screen and (max-width: 321px) and (max-width: 480px) {}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    body {
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        padding-left: 10px;
+    }
+
+    .navbar .logo img {
+        display: flex;
+        align-items: center;
+        width: 50px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: #ffffff90;
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 15px 0;
+        font-size: 1.2em;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 30px;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    #theme-switch {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 70px;
+    }
+
+    .accueil {
+        padding-top: 80px;
+        margin-top: 50px;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .accueil h1 {
+        display: inline-block;
+        line-height: 100%;
+        font-size: 60px;
+        letter-spacing: -2px;
+        font-weight: 800;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(90deg, rgb(255, 50, 50) 0%, rgb(255, 136, 0) 100%) text;
+    }
+
+    .texte-about-me {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about-card {
+        margin-bottom: 20px;
+    }
+
+    .box-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-projets img {
+        width: 70%;
+    }
+
+    .projets {
+        margin-bottom: 100px;
+    }
+
+    .contact {
+        display: none;
+        margin-top: 100px;
+    }
+}
 /* Extra Small (Mobile) < */
 @media screen and (max-width: 320px) {
     body {
@@ -929,6 +1182,22 @@ textarea {
         margin-top: 30px;
     }
 
+    .texte-about-me {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .about-card {
+        margin-bottom: 20px;
+    }
+
+    .box-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .skills {
         height: 100%;
         display: flex;
@@ -956,7 +1225,6 @@ textarea {
         font-size: 20px;
         text-align: center;
         text-transform: uppercase;
-
     }
 
     .left-content p {
