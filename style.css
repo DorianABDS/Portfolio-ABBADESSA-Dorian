@@ -40,9 +40,21 @@ body {
     font-weight: 400;
 }
 
-h1 {
+span {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-size: 16px;
+}
+
+h2 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
     background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -116,7 +128,7 @@ body.darkmode .theme-icon.moon {
 
 ::-webkit-scrollbar {
     width: 15px;
-    background: rgb(9, 9, 9, 0.1);
+    background: var(--base-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -167,7 +179,8 @@ body.darkmode .theme-icon.moon {
 }
 
 .logo img {
-    width: 70px;
+    width: 50px;
+    fill: var(--base-color);
 }
 
 .navbar .nav-links ul {
@@ -217,13 +230,16 @@ body.darkmode .theme-icon.moon {
     -webkit-text-fill-color: transparent;
 }
 
-.accueil h2 {
+.accueil span {
+    display: flex;
+    justify-content: flex-start;
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
 }
 
-.accueil p {
+.accueil h5 {
+    font-weight: 500;
     font-size: 24px;
 }
 
@@ -264,7 +280,7 @@ body.darkmode .theme-icon.moon {
     text-align: center;
 }
 
-.linkedin span {
+.linkedin p {
     margin: 10px;
 }
 
@@ -293,7 +309,7 @@ body.darkmode .theme-icon.moon {
     text-align: center;
 }
 
-.github span {
+.github p {
     margin: 10px;
 }
 
@@ -323,7 +339,7 @@ body.darkmode .theme-icon.moon {
     background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
 }
 
-.button-cv span {
+.button-cv p {
     margin: 10px;
 }
 
@@ -331,18 +347,13 @@ body.darkmode .theme-icon.moon {
 /* *à propos */
 
 .about-me {
-    margin-top: 20px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
     height: 100%;
-}
-
-.container-about-me h2 {
-    line-height: 5px;
-    font-size: 16px;
 }
 
 .card-about-me {
@@ -459,13 +470,13 @@ body.darkmode .theme-icon.moon {
 /* *skills */
 
 .skills {
-    margin-top: 150px;
+    padding-top: 100px;
 }
 
-.container-skills h2 {
-    text-align: center;
-    line-height: 5px;
-    font-size: 16px;
+.container-skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .box-skills {
@@ -542,13 +553,13 @@ body.darkmode .theme-icon.moon {
 /* *projets */
 
 .projets {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
-.container-projets h2 {
-    text-align: center;
-    line-height: 5px;
-    font-size: 16px;
+.container-projets {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .box-projets {
@@ -610,13 +621,15 @@ body.darkmode .theme-icon.moon {
 /* *contact */
 
 .contact {
+    /* ? */
+    display: none;
     margin-top: 150px;
 }
 
-.container-contact h2 {
-    text-align: center;
-    line-height: 5px;
-    font-size: 16px;
+.container-contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .submit-btn {
@@ -785,9 +798,8 @@ textarea {
     width: 100%;
     left: 0;
     bottom: 0;
-    height: 210px;
+    height: 242px;
     background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
-    z-index: 100;
 }
 
 /* **FOOTER */
@@ -810,7 +822,6 @@ textarea {
     }
 
     .contact {
-        display: none;
         margin-top: 100px;
     }
 }
@@ -833,7 +844,6 @@ textarea {
     }
 
     .contact {
-        display: none;
         margin-top: 100px;
     }
 }
@@ -856,7 +866,6 @@ textarea {
     }
 
     .contact {
-        display: none;
         margin-top: 100px;
     }
 }
@@ -945,7 +954,6 @@ textarea {
     }
 
     .contact {
-        display: none;
         margin-top: 100px;
     }
 }
@@ -1059,7 +1067,6 @@ textarea {
     }
 
     .contact {
-        display: none;
         margin-top: 100px;
     }
 }
@@ -1132,46 +1139,20 @@ textarea {
     }
 
     .accueil {
-        height: 100%;
+        padding-top: 80px;
+        margin-top: 50px;
+        width: 100%;
+        height: 100vh;
     }
-
+    
     .accueil h1 {
         display: inline-block;
         line-height: 100%;
         font-size: 40px;
         letter-spacing: -2px;
         font-weight: 800;
-        background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-
-    .accueil p {
-        height: 80px;
-        line-height: 150%;
-        margin-bottom: 80px;
-    }
-
-    .container-accueil img {
-        height: 30px;
-    }
-
-    .social {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .social a {
-        display: flex;
-        justify-content: center;
-        margin: 0 5px;
-        width: 30px;
-    }
-
-    .button-cv {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
+        background: linear-gradient(90deg, rgb(255, 50, 50) 0%, rgb(255, 136, 0) 100%) text;
     }
 
     .texte-about-me {
@@ -1190,12 +1171,16 @@ textarea {
         align-items: center;
     }
 
-    .skills {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 100px;
+    .box-projets img {
+        width: 70%;
+    }
+
+    .projets {
+        padding-bottom: 100px;
+    }
+
+    .contact {
+        margin-top: 100px;
     }
 
     .footer-container {
@@ -1204,7 +1189,7 @@ textarea {
         align-items: center;
         justify-content: center;
         width: 100%;
-        background: linear-gradient(90deg, rgba(255, 50, 50, 1) 0%, rgba(255, 136, 0, 1) 100%);
+        background: var(--secondary-text);
     }
 
     .left-content {
