@@ -6,22 +6,13 @@ responsive photo, skills
 mettre une transition sur la box-shadow de la nav
 
 1024 > 1440px :
-- footer
 
 769 > 1024 :
-- projet
-- footer
 
 481 > 768 :
-- nav
-- à propos
-- projet
-- footer
+- accueil
 
 321 > 480 :
-- nav
-- à propos
-- skills
 - projet
 - footer
 
