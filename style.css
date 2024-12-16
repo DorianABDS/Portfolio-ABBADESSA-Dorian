@@ -214,6 +214,8 @@ body.darkmode .theme-icon.moon {
 
 .accueil {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     padding-top: 75px;
     width: 100%;
     height: 100vh;
@@ -252,6 +254,10 @@ body.darkmode .theme-icon.moon {
 
 .container-accueil img {
     height: 30px;
+}
+
+.illustration img {
+    width: 600px;
 }
 
 .social {
