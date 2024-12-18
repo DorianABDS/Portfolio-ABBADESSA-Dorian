@@ -1,7 +1,6 @@
 compilation
 
-responsive design
-responsive photo, skills
+responsive photo
 
 mettre une transition sur la box-shadow de la nav
 
@@ -13,10 +12,10 @@ mettre une transition sur la box-shadow de la nav
 - accueil
 
 321 > 480 :
-- projet
-- footer
+- projet (img)
 
 320 < :
+- accueil
 - à propos
 - skills
 - projet
