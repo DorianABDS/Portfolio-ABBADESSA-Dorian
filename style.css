@@ -127,7 +127,7 @@ body.darkmode .theme-icon.moon {
 /* *scroll-bar */
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
     background: var(--base-color);
 }
 
@@ -135,6 +135,8 @@ body.darkmode .theme-icon.moon {
     background: linear-gradient(45deg, #ff8800 0%, #ff412a 51%, rgba(224,42,253,1) 100%);
     border-radius: 25px;
 }
+
+/* *scroll-bar */
 
 .navbar {
     background: var(--base-color);
@@ -348,7 +350,7 @@ body.darkmode .theme-icon.moon {
     background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
 }
 
-.button-cv p {
+.button-cv a {
     margin: 10px;
 }
 
@@ -418,12 +420,11 @@ body.darkmode .theme-icon.moon {
 
 .about-me {
     padding-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
     height: 100%;
+}
+
+.container-about-me {
+    text-align: center;
 }
 
 .card-about-me {
@@ -444,6 +445,11 @@ body.darkmode .theme-icon.moon {
     color: var(--text-color);
 }
 
+.about-me img {
+    width: 400px;
+    margin: 0 100px;
+}
+
 .card-about-me img {
     height: 500px;
 }
@@ -455,9 +461,11 @@ body.darkmode .theme-icon.moon {
 
 .texte-about-me {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 250px;
     margin-top: 50px;
-    width: 70%;
+    width: 100%;
 }
 
 .status p {
@@ -472,7 +480,6 @@ body.darkmode .theme-icon.moon {
     border-radius: 20px;
     background: var(--base-color);
     padding: 1.8rem;
-    margin-right: 20px;
     border: 2px solid #c3c6ce;
     transition: 0.5s ease-out;
     overflow: visible;
@@ -886,7 +893,7 @@ textarea {
 @media screen and (min-width: 1441px) {
     .accueil {
         padding: 0 100px;
-        padding-top: 130px;
+        padding-top: 180px;
         width: 100%;
         height: 100vh;
     }
@@ -909,7 +916,7 @@ textarea {
         display: flex;
         flex-direction: row;
         padding: 0 100px;
-        padding-top: 80px;
+        padding-top: 180px;
         margin-top: 50px;
         width: 100%;
         height: 100vh;
@@ -917,6 +924,11 @@ textarea {
 
     .illustration {
         display: none;
+    }
+
+    .texte-about-me {
+        display: flex;
+        flex-direction: column;
     }
 
     .box-projets img {
@@ -943,19 +955,15 @@ textarea {
         height: 100vh;
     }
 
-    .about-card {
-        margin: 10px;
-    }
-
     .illustration {
         display: none;
     }
-    
 
     .texte-about-me {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 0 100px;
     }
 
     .box-projets img {
@@ -1058,15 +1066,12 @@ textarea {
     .back-to-top {
         display: none;
     }
-
-    .about-card {
-        margin: 10px;
-    }
-
     .texte-about-me {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 0 100px;
+
     }
 
     .box-skills {
@@ -1193,16 +1198,16 @@ textarea {
         display: none;
     }
 
+    .about-me img {
+        width: 200px;
+    }
+
     .texte-about-me {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        /* margin-bottom: 20px 0; */
-    }
-
-    .about-card {
-        margin: 10px 0;
+        padding: 0 100px;
     }
 
     .box-skills {
@@ -1334,10 +1339,15 @@ textarea {
         display: none;
     }
 
+    .about-me img {
+        width: 200px;
+    }
+
     .texte-about-me {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 0;
     }
 
     .about-card {
@@ -1356,7 +1366,7 @@ textarea {
     }
 
     .box-projets img {
-        width: 70%;
+        width: 100%;
     }
 
     .projets {
