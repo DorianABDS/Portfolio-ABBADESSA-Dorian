@@ -1,14 +1,6 @@
-télécharger mon cv
-
-changer la couleur de la photo
+faire mon cv
 
 scroll transition anchor
-
-bandeau "recherche d'alternance"
-
-mettre le logo en png
-
-compilation
 
 mettre une transition sur la box-shadow de la nav
 
@@ -17,6 +9,7 @@ ajouter mes projets
 boutton projet
 
 arrow voir plus > darkmode
+hamburger > darkmode
 
 1024 > 1440px :
 
@@ -25,11 +18,6 @@ arrow voir plus > darkmode
 481 > 768 :
 
 321 > 480 :
-- projet (img)
 
 320 < :
-- accueil
-- à propos
-- skills
 - projet
-- footer
