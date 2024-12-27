@@ -1,5 +1,7 @@
 <!-- !SEO référencement -->
 
+son d'interaction
+
 chapiteau responsive
 
 mettre une transition sur la box-shadow de la nav
