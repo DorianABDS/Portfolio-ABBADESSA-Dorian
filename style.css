@@ -39,6 +39,7 @@ body {
     line-height: 1.8;
     font-weight: 400;
     scroll-behavior: smooth;
+    scroll-padding-top: 120px;
 }
 
 span {
@@ -212,7 +213,6 @@ body.darkmode .theme-icon.moon {
 
 .navbar {
     background: var(--base-color);
-    /* box-shadow: 0 0 5px var(--secondary-text); */
     top: 0;
     left: 0;
     height: 75px;
@@ -225,6 +225,10 @@ body.darkmode .theme-icon.moon {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+
+.shadow {
+    box-shadow: 0 0 5px var(--secondary-text);
 }
 
 .navbar a {
@@ -452,6 +456,7 @@ body.darkmode .theme-icon.moon {
 
 .button-cv a {
     margin: 10px;
+    text-decoration: none;
 }
 
 .back-to-top {
@@ -519,8 +524,8 @@ body.darkmode .theme-icon.moon {
 /* *à propos */
 
 .about-me {
-    padding-top: 100px;
     height: 100%;
+    padding-bottom: 180px;
 }
 
 .container-about-me {
@@ -649,8 +654,8 @@ body.darkmode .theme-icon.moon {
 /* *à propos */
 /* *skills */
 
-.skills {
-    padding-top: 100px;
+.skills  {
+    padding-bottom: 180px;
 }
 
 .container-skills {
@@ -737,10 +742,6 @@ body.darkmode .theme-icon.moon {
 /* *skills */
 /* *projets */
 
-.projets {
-    padding-top: 100px;
-}
-
 .container-projets {
     display: flex;
     align-items: center;
@@ -760,6 +761,7 @@ body.darkmode .theme-icon.moon {
 }
 
 .box-projets img {
+    max-width: 50%;
     width: 50%;
 }
 
