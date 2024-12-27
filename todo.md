@@ -2,8 +2,6 @@
 
 son d'interaction
 
-chapiteau responsive
-
 mettre une transition sur la box-shadow de la nav
 
 ajouter mes projets
@@ -20,6 +18,8 @@ hamburger > darkmode
 481 > 768 :
 
 321 > 480 :
+- chapiteau responsive
 
 320 < :
+- chapiteau responsive
 - projet
