@@ -6,6 +6,7 @@
 :root {
     --base-color: #fff;
     --base-variant: #fff;
+    --base-background: #ebebeb;
     --text-color: #2A2A2A;
     --secondary-text: #292929;
     --primary-color: #3a435d;
@@ -15,6 +16,7 @@
 .darkmode {
     --base-color: #2A2A2A;
     --base-variant: #2A2A2A;
+    --base-background: #222;
     --text-color: #fff;
     --secondary-text: #181818;
     --primary-color: #3a435d;
@@ -39,7 +41,7 @@ body {
     line-height: 1.8;
     font-weight: 400;
     scroll-behavior: smooth;
-    scroll-padding-top: 120px;
+    scroll-padding-top: 70px;
 }
 
 span {
@@ -526,6 +528,8 @@ body.darkmode .theme-icon.moon {
 .about-me {
     height: 100%;
     padding-bottom: 180px;
+    background-color: var(--base-background);
+    padding-top: 50px;
 }
 
 .container-about-me {
@@ -656,6 +660,7 @@ body.darkmode .theme-icon.moon {
 
 .skills  {
     padding-bottom: 180px;
+    padding-top: 50px;
 }
 
 .container-skills {
@@ -742,6 +747,11 @@ body.darkmode .theme-icon.moon {
 /* *skills */
 /* *projets */
 
+.projets {
+    padding-top: 50px;
+    background-color: var(--base-background);
+}
+
 .container-projets {
     display: flex;
     align-items: center;
@@ -771,12 +781,25 @@ body.darkmode .theme-icon.moon {
 }
 
 .box-projets p {
+    width: 80%;
     font-size: 14px;
     text-align: center;
 }
 
-.button-projets {
+.use-skills {
+    margin-top: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.use-skills {
+    width: 200px;
+}
+
+/* ? */
+.button-projets {
+    display: none;
     align-items: center;
     margin-top: 20px;
     color: #000;
@@ -812,8 +835,8 @@ body.darkmode .theme-icon.moon {
 /* *projets */
 /* *contact */
 
-.contact {
     /* ? */
+.contact {
     display: none;
     margin-top: 150px;
 }
@@ -947,13 +970,8 @@ textarea {
     background: var(--secondary-text);  
     z-index: 200px;
 
-    .left-content {
-        width: 20%;
-    }
-    
-    .right-content h4 {
-        display: flex;
-        justify-content: center;
+    .footer-content {
+        padding: 30px 0;
         text-transform: uppercase;
     }
 
