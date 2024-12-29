@@ -6,8 +6,6 @@ mettre une transition sur la box-shadow de la nav
 
 ajouter mes projets
 
-boutton projet
-
 arrow voir plus > darkmode
 hamburger > darkmode
 
