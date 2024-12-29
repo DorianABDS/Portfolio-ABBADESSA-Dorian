@@ -6,7 +6,7 @@
 :root {
     --base-color: #fff;
     --base-variant: #fff;
-    --base-background: #ebebeb;
+    --base-background: #f7f7f7;
     --text-color: #2A2A2A;
     --secondary-text: #292929;
     --primary-color: #3a435d;
@@ -53,9 +53,9 @@ span {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: -1px;
-    font-size: 16px;
+    font-size: 20px;
     -webkit-animation: reveal linear;
             animation: reveal linear;
     animation-timeline: view();
@@ -71,8 +71,9 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
+    text-transform: uppercase;
     background: -webkit-gradient(linear, left top, right top, from(rgba(255,136,0,1)), color-stop(51%, rgba(255,65,42,1)), to(rgba(224,42,253,1)));
     background: -o-linear-gradient(left, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
     background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
@@ -459,7 +460,7 @@ body.darkmode .theme-icon.moon {
 .accueil h1 {
     display: inline-block;
     line-height: 100%;
-    font-size: 80px;
+    font-size: 100px;
     letter-spacing: -2px;
     font-weight: 700;
     background: -webkit-gradient(linear, left top, right top, from(rgba(255,136,0,1)), color-stop(51%, rgba(255,65,42,1)), to(rgba(224,42,253,1)));
@@ -787,7 +788,10 @@ body.darkmode .theme-icon.moon {
 }
 
 .about-me p.text-title {
+    text-transform: uppercase;
     font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 1px;
 }
 
 .about-card {
@@ -853,6 +857,7 @@ body.darkmode .theme-icon.moon {
 
    .card-status p {
     text-align: center;
+    font-weight: 600;
    }
 
    .card-status a {
@@ -977,6 +982,8 @@ body.darkmode .theme-icon.moon {
 }
 
 .card-skills h3 {
+    font-size: 20px;
+    text-transform: uppercase;
     padding: 20px 0;
 }
 
@@ -1093,6 +1100,10 @@ body.darkmode .theme-icon.moon {
     animation-range-end: contain 10%;
 }
 
+.titre-projet {
+    font-size: 30px;
+}
+
 .box-projets h3 {
     text-transform: uppercase;
     padding-bottom: 15px;
@@ -1102,6 +1113,7 @@ body.darkmode .theme-icon.moon {
     width: 80%;
     font-size: 14px;
     text-align: center;
+    font-weight: 600;
     -webkit-animation: reveal linear;
             animation: reveal linear;
     animation-timeline: view();
@@ -1359,7 +1371,7 @@ textarea {
     z-index: 200px;
 
     .footer-content {
-        padding: 30px 0;
+        padding-top: 30px;
         text-transform: uppercase;
     }
 
@@ -1690,7 +1702,7 @@ textarea {
     }
 
     .accueil h1 {
-        font-size: 50px;
+        font-size: 80px;
         line-height: 100%;
     }
 
@@ -1894,7 +1906,7 @@ textarea {
     .accueil h1 {
         display: inline-block;
         line-height: 100%;
-        font-size: 40px;
+        font-size: 55px;
         letter-spacing: -2px;
         font-weight: 800;
         -webkit-text-fill-color: transparent;
@@ -2114,7 +2126,7 @@ textarea {
     .accueil h1 {
         display: inline-block;
         line-height: 100%;
-        font-size: 40px;
+        font-size: 50px;
         letter-spacing: -2px;
         font-weight: 800;
         -webkit-text-fill-color: transparent;
