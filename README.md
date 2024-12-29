@@ -24,7 +24,7 @@ Ici, toutes mes compétences, projets, contacts sont regroupés. Vous pourrez co
 - Github
 - Canva
 - PhotoShop
-- Skills icon
+- Skill icons
 
 ## 🌱 Hebergement
 
