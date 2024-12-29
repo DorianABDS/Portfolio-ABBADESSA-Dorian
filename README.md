@@ -1,9 +1,4 @@
 <div align="center">
-<h1>ABBADESSA Dorian - Portfolio</h1>
-</div>
-
-<br>
-<div align="center">
     <img src="/assets/src/img/bannière github portfolio.png" />
 </div>
 
