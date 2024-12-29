@@ -768,15 +768,17 @@ body.darkmode .theme-icon.moon {
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
-    animation: reveal linear;
-    animation-timeline: view();
-    animation-range-start: cover 0%;
-    animation-range-end: contain 1%;
 }
 
 .box-projets img {
     max-width: 50%;
     width: 50%;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 10%;
 }
 
 .box-projets h3 {
@@ -788,6 +790,10 @@ body.darkmode .theme-icon.moon {
     width: 80%;
     font-size: 14px;
     text-align: center;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 10%;
 }
 
 .box-projets a {
@@ -800,15 +806,21 @@ body.darkmode .theme-icon.moon {
     text-decoration: underline;
 }
 
+p.hebergement {
+    font-style: italic;
+    color: #aaa;
+}
+
 .use-skills {
-    margin-top: 20px;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.use-skills {
-    width: 200px;
+.use-skills img {
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 /* ? */
@@ -1049,7 +1061,7 @@ textarea {
     }
 
     .box-projets img {
-        width: 60%;
+        width: 50%;
     }
 
     .projets {
