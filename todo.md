@@ -1,7 +1,5 @@
 <!-- !SEO référencement -->
 
-meta keyword
-
 meta description
 
 alt image description
