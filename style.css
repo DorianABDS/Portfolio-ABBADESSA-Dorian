@@ -142,7 +142,7 @@ h4 {
     height: 73px;
     width: 50px;
     padding: 0;
-    margin-right: 35px;
+    margin-right: 30px;
     border: none;
     border-radius: 50%;
     position: absolute;
@@ -252,7 +252,7 @@ body.darkmode .theme-icon.moon {
     transform: scale(1);
 }
 
-.navbar .logo {
+/* .navbar .logo {
     display: flex;
     transform: none;
     font-weight: 700;
@@ -260,7 +260,7 @@ body.darkmode .theme-icon.moon {
 
 .logo img {
     width: 40px;
-}
+} */
 
 .navbar .nav-links ul {
     display: flex;
@@ -584,6 +584,10 @@ body.darkmode .theme-icon.moon {
     text-align: center;
 }
 
+.about-me p.text-title {
+    font-size: 25px;
+}
+
 .about-card {
     display: flex;
     flex-direction: row;
@@ -784,6 +788,16 @@ body.darkmode .theme-icon.moon {
     width: 80%;
     font-size: 14px;
     text-align: center;
+}
+
+.box-projets a {
+    color: #0C83CE;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.box-projets a::after {
+    text-decoration: underline;
 }
 
 .use-skills {
@@ -1030,6 +1044,10 @@ textarea {
         height: 100vh;
     }
 
+    .about-me p.text-title {
+        font-size: 25px;
+    }
+
     .box-projets img {
         width: 60%;
     }
@@ -1049,13 +1067,12 @@ textarea {
         flex-direction: row;
         padding: 0 100px;
         padding-top: 180px;
-        margin-top: 50px;
         width: 100%;
         height: 100vh;
     }
 
     .bande {
-        margin-top: 25px;
+        margin-top: 75px;
     }
 
     .illustration {
@@ -1065,6 +1082,10 @@ textarea {
     .texte-about-me {
         display: flex;
         flex-direction: column;
+    }
+
+    .about-me p.text-title {
+        font-size: 25px;
     }
 
     .box-projets img {
@@ -1085,14 +1106,13 @@ textarea {
         display: flex;
         flex-direction: row;
         padding: 0 100px;
-        padding-top: 80px;
-        margin-top: 50px;
+        padding-top: 180px;
         width: 100%;
         height: 100vh;
     }
 
     .bande {
-        margin-top: 25px;
+        margin-top: 75px;
     }
 
     .illustration {
@@ -1104,6 +1124,10 @@ textarea {
         justify-content: center;
         flex-wrap: wrap;
         padding: 0 100px;
+    }
+
+    .about-me p.text-title {
+        font-size: 25px;
     }
 
     .box-projets img {
@@ -1128,7 +1152,11 @@ textarea {
         padding: 0;
     }
 
-    .navbar .logo {
+    .logo-texte {
+        padding-left: 30px;
+    }
+
+    /* .navbar .logo {
         padding-left: 30px;
     }
 
@@ -1136,7 +1164,7 @@ textarea {
         display: flex;
         align-items: center;
         
-    }
+    } */
 
     .nav-links {
         position: absolute;
@@ -1182,11 +1210,25 @@ textarea {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 70px;
+        margin-right: 30px;
     }
 
     .bande {
         margin-top: 25px;
+    }
+
+    span {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
+    }
+    
+    h2 {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
     }
 
     .accueil {
@@ -1211,17 +1253,36 @@ textarea {
     .back-to-top {
         display: none;
     }
+
     .texte-about-me {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         padding: 0 100px;
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
+    }
 
+    .about-me p.text-title {
+        font-size: 25px;
     }
 
     .box-skills {
         display: flex;
         flex-wrap: wrap;
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
+    }
+
+    .box-projets {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
     }
 
     .box-projets img {
@@ -1248,7 +1309,7 @@ textarea {
 /* Extra Small (Mobile) */
 @media screen and (min-width: 321px) and (max-width: 480px) {
     body {
-        padding: 20px;
+        /* padding: 20px; */
         padding-bottom: 50px;
     }
 
@@ -1256,14 +1317,18 @@ textarea {
         padding: 0;
     }
 
-    .navbar .logo {
+    .logo-texte {
+        padding-left: 30px;
+    }
+
+    /* .navbar .logo {
         padding-left: 30px;
     }
 
     .navbar .logo img {
         display: flex;
         align-items: center;
-    }
+    } */
 
     .nav-links {
         position: absolute;
@@ -1309,16 +1374,31 @@ textarea {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 70px;
+        margin-right: 30px;
     }
 
     .bande {
-        margin-top: 55px;
+        margin-top: 25px;
+    }
+
+    span {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
+    }
+    
+    h2 {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
     }
 
     .accueil {
         display: flex;
         flex-direction: row;
+        padding: 0 50px;
         padding-top: 80px;
         margin-top: 50px;
         width: 100%;
@@ -1354,15 +1434,32 @@ textarea {
     .texte-about-me {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
-        padding: 0 100px;
+        padding: 0 50px;
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
+    }
+
+    .about-me p.text-title {
+        font-size: 20px;
     }
 
     .box-skills {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
+    }
+
+    .box-projets {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
     }
 
     .box-projets img {
@@ -1394,7 +1491,7 @@ textarea {
 /* Extra Small (Mobile) < */
 @media screen and (max-width: 320px) {
     body {
-        padding: 20px;
+        padding-top: 60px;
         padding-bottom: 50px;
     }
 
@@ -1402,14 +1499,18 @@ textarea {
         padding: 0;
     }
 
-    .navbar .logo {
+    .logo-texte {
+        padding-left: 30px;
+    }
+
+    /* .navbar .logo {
         padding-left: 30px;
     }
 
     .navbar .logo img {
         display: flex;
         align-items: center;
-    }
+    } */
 
     .nav-links {
         position: absolute;
@@ -1455,13 +1556,32 @@ textarea {
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 70px;
+        margin-right: 30px;
+    }
+
+    .bande {
+        margin-top: 15px;
+    }
+
+    span {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
+    }
+    
+    h2 {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
     }
 
     .accueil {
         display: flex;
         flex-direction: row;
-        padding-top: 40px;
+        padding: 0 20px;
+        padding-top: 15px;
         margin-top: 55px;
         width: 100%;
         height: 100vh;
@@ -1496,7 +1616,11 @@ textarea {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 0;
+        padding: 0 40px;
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
     }
 
     .about-card {
@@ -1505,13 +1629,28 @@ textarea {
     }
 
     .about-me p {
-        font-size: 10px;
+        font-size: 15px;
+    }
+
+    .about-me p.text-title {
+        font-size: 20px;
     }
 
     .box-skills {
         display: flex;
         flex-direction: column;
         align-items: center;
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
+    }
+
+    .box-projets {
+        animation: none;
+        animation-timeline: none;
+        animation-range-start: none;
+        animation-range-end: none;
     }
 
     .box-projets img {
