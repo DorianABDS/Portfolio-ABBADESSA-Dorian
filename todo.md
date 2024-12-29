@@ -16,8 +16,6 @@ github bannière
 
 markdown versioning 
 
-langue
-
 1024 > 1440px :
 769 > 1024 :
 481 > 768 :
