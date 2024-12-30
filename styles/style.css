@@ -2096,6 +2096,7 @@ textarea {
     }
 
     span {
+        font-size: 18px;
         -webkit-animation: none;
                 animation: none;
         animation-timeline: none;
@@ -2104,6 +2105,7 @@ textarea {
     }
     
     h2 {
+        font-size: 30px;
         -webkit-animation: none;
                 animation: none;
         animation-timeline: none;
