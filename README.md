@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="/assets/src/img/bannière github portfolio.png" />
+    <img src="/assets/src/img/bannière_github_portfolio.png" />
 </div>
 
 ## 📜 Informations générales
