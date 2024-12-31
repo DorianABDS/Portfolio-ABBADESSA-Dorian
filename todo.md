@@ -1,12 +1,14 @@
 <!-- !SEO référencement -->
 
-meta tags
+<!-- *meta tags -->
 
 <!-- ? -->
 son d'interaction
 
 <!-- ? -->
 mettre une transition sur la box-shadow de la nav
+
+changer SASS en Sass sur le cv
 
 changer l'animation de l'ux des boutons accueil
 
