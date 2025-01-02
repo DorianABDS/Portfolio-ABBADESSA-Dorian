@@ -14,8 +14,6 @@ changer l'animation de l'ux des boutons accueil
 
 Changer la dernière phrase de mes objectifs en quelque chose de plus personnel
 
-Changer les titres des langages
-
 chapiteau cliquable download cv
 
 ombre porter skills
