@@ -8,8 +8,6 @@ son d'interaction
 <!-- ? -->
 mettre une transition sur la box-shadow de la nav
 
-changer SASS en Sass sur le cv
-
 changer l'animation de l'ux des boutons accueil
 
 Changer la dernière phrase de mes objectifs en quelque chose de plus personnel
