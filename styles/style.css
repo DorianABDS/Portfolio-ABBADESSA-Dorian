@@ -34,7 +34,6 @@
 
 html,
 body {
-    color: var(--text-color);
     font-size: 19.3px;
     color: var(--text-color);
     background-color: var(--base-color);
