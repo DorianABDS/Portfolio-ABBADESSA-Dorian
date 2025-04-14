@@ -55,11 +55,6 @@ span {
     font-weight: 700;
     letter-spacing: -1px;
     font-size: 20px;
-    -webkit-animation: reveal linear;
-            animation: reveal linear;
-    animation-timeline: view();
-    animation-range-start: cover 0%;
-    animation-range-end: contain 20%;
 }
 
 h2 {
@@ -78,11 +73,6 @@ h2 {
     background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: reveal linear;
-            animation: reveal linear;
-    animation-timeline: view();
-    animation-range-start: cover 0%;
-    animation-range-end: contain 20%;
 }
 
 h4 {
@@ -182,11 +172,6 @@ h4 {
     -webkit-transform-origin: left;
         -ms-transform-origin: left;
             transform-origin: left;
-    -webkit-animation: scroll linear;
-            animation: scroll linear;
-    animation-timeline: scroll();
-    animation-range-start: cover 100px;
-    animation-range-end: cover 100%;
   }
   
   @-webkit-keyframes scroll {
@@ -463,7 +448,7 @@ body.darkmode .theme-icon.moon {
     letter-spacing: -2px;
     font-weight: 700;
     background: -webkit-gradient(linear, left top, right top, from(rgba(255,136,0,1)), color-stop(51%, rgba(255,65,42,1)), to(rgba(224,42,253,1)));
-    background: -o-linear-gradient(left, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
+    background: -o-linear-gradient(left, rgb(255, 136, 0) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
     background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -775,11 +760,6 @@ body.darkmode .theme-icon.moon {
             align-items: center;
     padding: 0 250px;
     width: 100%;
-    -webkit-animation: reveal linear;
-            animation: reveal linear;
-    animation-timeline: view();
-    animation-range-start: cover 0%;
-    animation-range-end: contain 10%;
 }
 
 .status p {
@@ -922,11 +902,6 @@ body.darkmode .theme-icon.moon {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-animation: reveal linear;
-            animation: reveal linear;
-    animation-timeline: view();
-    animation-range-start: cover 0%;
-    animation-range-end: contain 1%;
 }
 
 .container-card-skills {
@@ -1092,11 +1067,6 @@ body.darkmode .theme-icon.moon {
     width: 50%;
     margin-top: 70px;
     margin-bottom: 40px;
-    -webkit-animation: reveal linear;
-            animation: reveal linear;
-    animation-timeline: view();
-    animation-range-start: cover 0%;
-    animation-range-end: contain 10%;
 }
 
 .titre-projet {
@@ -1113,11 +1083,6 @@ body.darkmode .theme-icon.moon {
     font-size: 14px;
     text-align: center;
     font-weight: 600;
-    -webkit-animation: reveal linear;
-            animation: reveal linear;
-    animation-timeline: view();
-    animation-range-start: cover 0%;
-    animation-range-end: contain 10%;
 }
 
 .box-projets a.github-projet {
@@ -1134,6 +1099,10 @@ body.darkmode .theme-icon.moon {
 
 .box-projets a::after {
     text-decoration: underline;
+}
+
+.gitopedia {
+    color: #ff8800 !important;
 }
 
 p.hebergement {
@@ -1669,21 +1638,10 @@ textarea {
         margin-top: 25px;
     }
 
-    span {
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
-    }
+
     
     h2 {
         font-size: 40px;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .accueil {
@@ -1724,11 +1682,6 @@ textarea {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0 100px;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .about-me p.text-title {
@@ -1741,19 +1694,6 @@ textarea {
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
-    }
-
-    .box-projets {
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .box-projets img {
@@ -1874,20 +1814,10 @@ textarea {
 
     span {
         font-size: 18px;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
     
     h2 {
         font-size: 30px;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .accueil {
@@ -1941,11 +1871,6 @@ textarea {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0 50px;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .about-me p.text-title {
@@ -1958,19 +1883,6 @@ textarea {
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
-    }
-
-    .box-projets {
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .box-projets img {
@@ -2096,20 +2008,10 @@ textarea {
 
     span {
         font-size: 18px;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
     
     h2 {
         font-size: 30px;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .accueil {
@@ -2162,11 +2064,6 @@ textarea {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0 40px;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .about-card {
@@ -2193,19 +2090,6 @@ textarea {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
-    }
-
-    .box-projets {
-        -webkit-animation: none;
-                animation: none;
-        animation-timeline: none;
-        animation-range-start: none;
-        animation-range-end: none;
     }
 
     .box-projets img {
