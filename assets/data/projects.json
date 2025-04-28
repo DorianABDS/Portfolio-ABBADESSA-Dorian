@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "type": "projet-academique",
+        "lien-repo":"https://github.com/DorianABDS/Happy-Meal",
+        "name": "Happy Meal",
+        "description": "Planifiez vos repas, sauvegardez vos recettes préférées et téléchargez votre liste de courses.",
+        "image": "asset/img",
+        "tags-1": "HTML",
+        "tags-2": "CSS",
+        "tags-3": "JavaScript"
+    },
+    {
+        "id": 2,
+        "type": "projet-academique",
+        "lien-repo":"https://zinema.abbadessa-dorian.fr",
+        "name": "Zinema",
+        "description": "Zinema vous permet de découvrir, rechercher et organiser vos films et séries préférés en toute simplicité.",
+        "image": "asset/zinema.png",
+        "tags-1": "HTML",
+        "tags-2": "Tailwind",
+        "tags-3": "JavaScrip"
+    },
+    {
+        "id": 10,
+        "type": "side-project",
+        "lien-repo":"https://github.com/DorianABDS/Gitopedia",
+        "name": "Gitopedia",
+        "description": "Gitopedia est une plateforme pensée pour rendre Git/GitHub accessible, simple et intuitif, pour tous les développeurs.",
+        "image": "asset/img",
+        "tags-1": "HTML",
+        "tags-2": "Tailwind",
+        "tags-3": "JavaScript",
+        "tags-4": "PHP/POO",
+        "tags-5": "SQL"
+    },
+    {
+        "id": 11,
+        "type": "side-project",
+        "lien-repo":"https://github.com/DorianABDS/DNS-Drink-Name-Spinner/tree/main",
+        "name": "DNS-Drink-Name-Spinner",
+        "description": "La roulette de la fortune pour la buvette du BDE de La Plateforme.",
+        "image": "asset/img",
+        "tags-1": "HTML",
+        "tags-2": "CSS",
+        "tags-3": "JavaScript"
+    }
+]
