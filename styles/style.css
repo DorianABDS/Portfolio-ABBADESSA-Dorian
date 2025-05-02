@@ -1171,6 +1171,15 @@ p.hebergement {
     background: linear-gradient(90deg, rgba(255,136,0,1) 0%, rgba(255,65,42,1) 51%, rgba(224,42,253,1) 100%);
 }
 
+.hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: grid;
+  }
+  
+
 /* *projets */
 /* *contact */
 
