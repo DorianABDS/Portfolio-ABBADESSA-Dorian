@@ -7,7 +7,7 @@
         "lien-site": "https://github.com/DorianABDS/Happy-Meal",
         "name": "Happy Meal",
         "description": "Planifiez vos repas, sauvegardez vos recettes préférées et téléchargez votre liste de courses",
-        "image": "assets/src/img/happy-meal.png",
+        "image": "assets/src/img/happy-meal.wepb",
         "tags": ["HTML", "CSS", "JavaScript"]
     },
     {
@@ -18,7 +18,7 @@
         "lien-repo": "https://github.com/DorianABDS/Zinema",
         "name": "Zinema",
         "description": "Zinema vous permet de découvrir, rechercher et organiser vos films et séries préférés en toute simplicité",
-        "image": "assets/src/img/zinema.png",
+        "image": "assets/src/img/zinema.wepb",
         "tags": ["HTML", "Tailwind", "JavaScript"]
     },
     {
@@ -28,7 +28,7 @@
         "lien-repo": "https://github.com/DorianABDS/Gitopedia",
         "name": "Gitopedia",
         "description": "Gitopedia est une plateforme qui simplifie l’usage de Git et GitHub pour tous les développeurs",
-        "image": "assets/src/img/gitopedia.png",
+        "image": "assets/src/img/gitopedia.wepb",
         "tags": ["HTML", "Tailwind", "JavaScript", "PHP/POO", "SQL"]
     },
     {
@@ -39,7 +39,7 @@
         "lien-site": "https://raphael-attias.github.io/DNS-Drink-Name-Spinner/",
         "name": "DNS-Drink-Name-Spinner",
         "description": "Une roulette de la fortune du BDE pour dynamiser la buvette de La Plateforme et divertir",
-        "image": "assets/src/img/DNS-Drink-Name-Spinner.png",
+        "image": "assets/src/img/DNS-Drink-Name-Spinner.wepb",
         "tags": ["HTML", "CSS", "JavaScript"]
     }
 ]
