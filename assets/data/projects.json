@@ -1,48 +1,45 @@
 [
     {
         "id": 1,
+        "isOnline": false,
         "type": "projet-academique",
-        "lien-repo":"https://github.com/DorianABDS/Happy-Meal",
+        "lien-repo": "https://github.com/DorianABDS/Happy-Meal",
+        "lien-site": "https://github.com/DorianABDS/Happy-Meal",
         "name": "Happy Meal",
-        "description": "Planifiez vos repas, sauvegardez vos recettes préférées et téléchargez votre liste de courses.",
-        "image": "assets/src/img",
-        "tags-1": "HTML",
-        "tags-2": "CSS",
-        "tags-3": "JavaScript"
+        "description": "Planifiez vos repas, sauvegardez vos recettes préférées et téléchargez votre liste de courses",
+        "image": "assets/src/img/happy-meal.png",
+        "tags": ["HTML", "CSS", "JavaScript"]
     },
     {
         "id": 2,
+        "isOnline": true,
         "type": "projet-academique",
-        "lien-repo":"https://zinema.abbadessa-dorian.fr",
+        "lien-site": "https://zinema.abbadessa-dorian.fr",
+        "lien-repo": "https://github.com/DorianABDS/Zinema",
         "name": "Zinema",
-        "description": "Zinema vous permet de découvrir, rechercher et organiser vos films et séries préférés en toute simplicité.",
+        "description": "Zinema vous permet de découvrir, rechercher et organiser vos films et séries préférés en toute simplicité",
         "image": "assets/src/img/zinema.png",
-        "tags-1": "HTML",
-        "tags-2": "Tailwind",
-        "tags-3": "JavaScrip"
+        "tags": ["HTML", "Tailwind", "JavaScript"]
     },
     {
         "id": 10,
+        "isOnline": false,
         "type": "side-project",
-        "lien-repo":"https://github.com/DorianABDS/Gitopedia",
+        "lien-repo": "https://github.com/DorianABDS/Gitopedia",
         "name": "Gitopedia",
-        "description": "Gitopedia est une plateforme pensée pour rendre Git/GitHub accessible, simple et intuitif, pour tous les développeurs.",
-        "image": "assets/src/img",
-        "tags-1": "HTML",
-        "tags-2": "Tailwind",
-        "tags-3": "JavaScript",
-        "tags-4": "PHP/POO",
-        "tags-5": "SQL"
+        "description": "Gitopedia est une plateforme qui simplifie l’usage de Git et GitHub pour tous les développeurs",
+        "image": "assets/src/img/gitopedia.png",
+        "tags": ["HTML", "Tailwind", "JavaScript", "PHP/POO", "SQL"]
     },
     {
         "id": 11,
+        "isOnline": true,
         "type": "side-project",
-        "lien-repo":"https://github.com/DorianABDS/DNS-Drink-Name-Spinner/tree/main",
+        "lien-repo": "https://github.com/raphael-attias/DNS-Drink-Name-Spinner",
+        "lien-site": "https://raphael-attias.github.io/DNS-Drink-Name-Spinner/",
         "name": "DNS-Drink-Name-Spinner",
-        "description": "La roulette de la fortune pour la buvette du BDE de La Plateforme.",
-        "image": "assets/src/img",
-        "tags-1": "HTML",
-        "tags-2": "CSS",
-        "tags-3": "JavaScript"
+        "description": "Une roulette de la fortune du BDE pour dynamiser la buvette de La Plateforme et divertir",
+        "image": "assets/src/img/DNS-Drink-Name-Spinner.png",
+        "tags": ["HTML", "CSS", "JavaScript"]
     }
 ]
