@@ -41,9 +41,14 @@
   <link rel="shortcute icon" href="/assets/src/img/Logo_plat_Div_blanc.png" />
   <link rel="stylesheet" href="/styles/style.css" />
   <!-- javascript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="/assets/script/darkmode.js" defer></script>
   <script src="/assets/script/hamburger.js" defer></script>
   <script src="/assets/script/projects.js" defer></script>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -272,157 +277,17 @@
     <section id="projets" class="projects-section">
       <div class="projects-container">
 
-        <h2 class="section-heading">
-          <span class="section-heading-light">Projets </span>
-          <span class="section-heading-accent">Vedettes</span>
-        </h2>
-
+        <span>Mes Projets</span>
+        <h2 class="section-heading">Projets</h2>
+    
         <div class="hero-buttons" id="hero-buttons">
-          <button id="show-academics-projects" class="">Projets académique</button>
-          <button id="show-sides-projects" class="">Projet personnel</button>
+          <button id="show-academics-projects">Projets académique</button>
+          <button id="show-sides-projects">Projet personnel</button>
         </div>
-
-        <div id="academic-projects" class="projects-grid visible">
-        </div>
-
-        <div id="sides-projects" class="projects-grid hidden">
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Projets fansite -->
-    <section class="projets" id="projets">
-      <div class="container-projets">
-        <span>Mes réalisations</span>
-        <h2>Projets</h2>
-      </div>
-      <!-- Mon premier projet -->
-      <article class="box-projets">
-        <img src="/assets/src/img/Macbook_16_Fansite.png" alt="Image du projet Fansite" />
-        <span>Projet d'école LaPlateforme</span>
-        <h2 class="titre-projet">Fansite</h2>
-        <p>
-          Mon premier projet de groupe auquel chacun des membres devait créer
-          une page web de fan. En l'occurrence, notre thème était les boissons
-          et ma page l'entreprise
-          <a href="https://www.chibrebleu.fr/">Chibre Bleu</a>.
-        </p>
-        <p>
-          Retrouvez mon travail sur
-          <a class="github-projet" href="https://github.com/DorianABDS/projet1">GitHub</a>
-        </p>
-        <p class="hebergement">(site non hébergé)</p>
-        <div class="use-skills">
-          <img src="https://skillicons.dev/icons?i=html,css" alt="icone html et css" />
-        </div>
-      </article>
-    </section>
-    <!-- Projets Happy Meal -->
-    <section class="projets" id="projets">
-      <!-- Mon 2e projet -->
-      <article class="box-projets">
-        <img src="/assets/src/img/Macbook_16_HappyMeal.png" alt="Image du projet Happy Meal" />
-        <span>Projet d'école LaPlateforme</span>
-        <h2 class="titre-projet">Happy Meal</h2>
-        <p>
-          Projet Happy Meal ! Le but étant de proposer un large éventail de recettes a dégusté. Mise en favori,
-          planification de vos repas, et même un PDF téléchargeable de vos ingrédients si vous voulez faire vos courses
-          sans rien oublier !
-        </p>
-        <p>
-          Retrouvez mon travail sur
-          <a class="github-projet" href="https://github.com/DorianABDS/Happy-Meal">GitHub</a>
-        </p>
-        <p class="hebergement">(site non hébergé)</p>
-        <div class="use-skills">
-          <img src="https://skillicons.dev/icons?i=html,css,js" alt="icone html, css et javascript" />
-        </div>
-      </article>
-    </section>
-    <!-- Projets Idle-Clicker -->
-    <section class="projets" id="projets">
-      <!-- Mon 3e projet -->
-      <article class="box-projets">
-        <img src="/assets/src/img/Macbook_16_Idle-Clicker.png" alt="Image du projet idle-clicker" />
-        <span>Projet d'école LaPlateforme</span>
-        <h2 class="titre-projet">Idle-Clicker</h2>
-        <p>
-          Bienvenue dans ce projet de jeu clicker incrémental (Idle Game) ! Ce jeu est un excellent point de départ pour
-          comprendre les mécaniques de jeux d'incrémentation, la gestion d'état, les achats de bonus, la sauvegarde des
-          données en local et plus encore.
-        </p>
-        <p>
-          Retrouvez mon travail sur
-          <a class="github-projet" href="https://github.com/DorianABDS/Idle-Clicker">GitHub</a>
-        </p>
-        <p class="hebergement">(site non hébergé)</p>
-        <div class="use-skills">
-          <img src="https://skillicons.dev/icons?i=html,css,js" alt="icone html, css, javascript" />
-        </div>
-      </article>
-    </section>
-    <!-- Projets Gitopedia -->
-    <section class="projets" id="projets">
-      <!-- Mon 4e projet -->
-      <article class="box-projets">
-        <img src="/assets/src/img/Macbook_16_Gitopedia.png" alt="Image du projet gitopedia" />
-        <span>Projet personnel</span>
-        <h2 class="titre-projet">Gitopedia</h2>
-        <p>
-          Gitopedia est née d’un constat simple : malgré son importance cruciale dans le développement logiciel, Git
-          reste souvent complexe à maîtriser. Ce projet incarne notre volonté de rendre Git accessible et intuitif grâce
-          à une plateforme pensée pour accompagner chaque développeur, du novice au confirmé.
-        </p>
-        <p>
-          Retrouvez mon travail sur
-          <a class="github-projet" href="https://github.com/DorianABDS/Gitopedia">GitHub</a>
-        </p>
-        <p class="hebergement gitopedia">(EN TRAVAUX)</p>
-        <div class="use-skills">
-          <img src="https://skillicons.dev/icons?i=html,css,js,php,tailwindcss"
-            alt="icone html, css, javascript, php et tailwind" />
-        </div>
-      </article>
-    </section>
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container-contact">
-        <span>Message</span>
-        <h2>Contact</h2>
-      </div>
-      <!-- Formulaire de contact -->
-      <div class="container">
-        <div class="row input-container">
-          <div class="col-xs-12">
-            <div class="styled-input wide">
-              <input type="text" required />
-              <label>Prénom</label>
-            </div>
-          </div>
-          <div>
-            <div class="styled-input">
-              <input type="text" required />
-              <label>E-mail</label>
-            </div>
-          </div>
-          <div>
-            <div class="styled-input">
-              <input type="text" required />
-              <label>Numéro de téléphone</label>
-            </div>
-          </div>
-          <div>
-            <div class="styled-input wide">
-              <textarea required></textarea>
-              <label>Message</label>
-            </div>
-          </div>
-          <!-- Bouton d'envoi -->
-          <div>
-            <button class="button-envoyer">Envoyez un message</button>
-          </div>
-        </div>
+    
+        <div id="academic-projects" class="projects-grid visible"></div>
+        <div id="sides-projects" class="projects-grid hidden"></div>
+    
       </div>
     </section>
   </main>
