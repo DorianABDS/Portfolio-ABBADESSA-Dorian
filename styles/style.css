@@ -519,8 +519,8 @@ body.darkmode .theme-icon.moon {
 
 .linkedin:hover {
     color: #fff;
-    border: 1px solid #0077b5;
-    background-color: #0077b5;
+    border: 1px solid #2A2A2A;
+    background: linear-gradient(90deg, #ff8800, #ff416c);
 }
 
 .github {
@@ -553,8 +553,8 @@ body.darkmode .theme-icon.moon {
 
 .github:hover {
     color: #fff;
-    border: 1px solid #24292e;
-    background-color: #24292e;
+    border: 1px solid #2A2A2A;
+    background: linear-gradient(90deg, #ff8800, #ff416c);
 }
 
 .button-cv {
@@ -573,21 +573,24 @@ body.darkmode .theme-icon.moon {
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid var(--base-color);
+    border: 1px solid var(--text-color);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
     color: var(--text-color);
     text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(#ff8800), to(#ff416c));
-    background: -o-linear-gradient(left, #ff8800, #ff416c);
-    background: linear-gradient(90deg, #ff8800, #ff416c);
 }
 
 .button-cv a {
     margin: 10px;
     text-decoration: none;
     color: var(--text-color);
+}
+
+.button-cv:hover {
+    color: #fff;
+    border: 1px solid #2A2A2A;
+    background: linear-gradient(90deg, #ff8800, #ff416c);
 }
 
 .back-to-top {
