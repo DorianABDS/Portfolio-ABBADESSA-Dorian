@@ -360,17 +360,20 @@ body.darkmode .theme-icon.moon {
 }
 
 .bande {
+    height: 30px;
     width: 100%;
-    margin-top: 75px;
+    margin-top: 70px;
     overflow: hidden;
     position: absolute;
     -webkit-text-stroke-color: var(--base-color);
     white-space: nowrap;
-    background-color: #ffd035;
+    background: linear-gradient(90deg, #ff8800, #ff416c);
 }
 
 .bande p {
+    font-size: 16px;
     font-weight: 600;
+    letter-spacing: 2px;
     color: var(--secondary-text);
     text-transform: uppercase;
     -webkit-animation: animate 100000ms linear infinite;
