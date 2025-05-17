@@ -2,93 +2,98 @@
 <html lang="fr">
 
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Configuration Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTN4LZ6KLH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-
     gtag("config", "G-FTN4LZ6KLH");
   </script>
+
+  <!-- Métadonnées de base -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Je m'appelle ABBADESSA Dorian et j'ai 24 ans. Je suis en formation pour devenir concepteur d'applications web et mobile et voici mon portfolio." />
-  <!-- Primary Meta Tags -->
+
+  <!-- Métadonnées primaires -->
   <title>ABBADESSA Dorian - Portfolio</title>
   <meta name="title" content="ABBADESSA Dorian - Portfolio" />
-  <meta name="description"
-    content="Je m'appelle ABBADESSA Dorian et j'ai 24 ans. Je suis en formation pour devenir concepteur d'applications web et mobile et voici mon portfolio." />
-  <!-- Open Graph / Facebook -->
+
+  <!-- Métadonnées Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://abbadessa-dorian.fr/" />
   <meta property="og:title" content="ABBADESSA Dorian - Portfolio" />
   <meta property="og:description"
     content="Je m'appelle ABBADESSA Dorian et j'ai 24 ans. Je suis en formation pour devenir concepteur d'applications web et mobile et voici mon portfolio." />
   <meta property="og:image" content="https://abbadessa-dorian.fr/assets/src/img/meta_tags.webp" />
-  <!-- Twitter -->
+
+  <!-- Métadonnées Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://abbadessa-dorian.fr/" />
   <meta property="twitter:title" content="ABBADESSA Dorian - Portfolio" />
   <meta property="twitter:description"
     content="Je m'appelle ABBADESSA Dorian et j'ai 24 ans. Je suis en formation pour devenir concepteur d'applications web et mobile et voici mon portfolio." />
   <meta property="twitter:image" content="https://abbadessa-dorian.fr/assets/src/img/meta_tags.webp" />
-  <!-- css -->
-  <link rel="shortcute icon" href="/assets/src/img/Logo_plat_Div_blanc.png" />
+
+  <!-- Ressources CSS -->
+  <link rel="shortcut icon" href="/assets/src/img/Logo_plat_Div_blanc.png" />
   <link rel="stylesheet" href="/styles/style.css" />
-  <!-- javascript -->
+
+  <!-- Ressources JavaScript -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="/assets/script/darkmode.js" defer></script>
   <script src="/assets/script/hamburger.js" defer></script>
   <script src="/assets/script/projects.js" defer></script>
-  <!-- font -->
+
+  <!-- Polices d'écriture -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <!-- **HEADER -->
   <header class="header">
-    <!-- Barre de navigation  -->
+    <!-- Barre de navigation -->
     <nav class="navbar shadow">
-      <!-- Darkmode -->
+      <!-- Commutateur de thème (mode clair/sombre) -->
       <label id="theme-switch">
         <input type="checkbox" id="theme-toggle" style="display: none" />
-        <!-- SVG pour le soleil (mode clair) -->
+        <!-- Icône du soleil (mode clair) -->
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"
           class="theme-icon sun">
           <path
             d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
         </svg>
 
-        <!-- SVG pour la lune (mode sombre) -->
+        <!-- Icône de la lune (mode sombre) -->
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"
           class="theme-icon moon">
           <path
             d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
         </svg>
       </label>
-      <!-- Logo -->
-      <!-- <a href="index.html" class="logo darkmode"><img src="/assets/src/img/Logo plat Div 3.png" alt=""></a> -->
+
+      <!-- Logo textuel -->
       <a href="index.html" class="logo-texte">ABBADESSA</a>
-      <!-- Lien de anvigation -->
+
+      <!-- Liens de navigation -->
       <div class="nav-links">
         <ul>
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#about-me">À propos</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projets">Projets</a></li>
-          <!-- ?<li><a href="#contact">Contact</a></li> -->
         </ul>
       </div>
-      <!-- Logo hamburger -->
-      <!-- <img src="/assets/src/img/bars-solid.svg" alt="menu hamburger" id="menu-hamburger"> -->
     </nav>
+
+    <!-- Bannière défilante pour la recherche d'alternance -->
     <div class="bande">
       <p>
         recherche d'alternance pour 2025/2027 ・ recherche d'alternance pour
@@ -105,35 +110,47 @@
       </p>
     </div>
   </header>
-  <!-- **HEADER -->
-  <!-- **MAIN -->
+
   <main>
-    <!-- Accueil -->
+    <!-- Section d'accueil -->
     <section class="accueil" id="accueil">
+      <!-- Illustration principale -->
       <div class="illustration">
         <img src="/assets/src/img/code-illustration.png"
           alt="illustration d'un ordinateur avec des éléments graphiques de code" />
       </div>
+
+      <!-- Conteneur principal d'accueil -->
       <div class="container-accueil">
         <span>Hi, I Am</span>
         <h1>DORIAN</h1>
         <h5>Concepteur-développer Web/Mobile</h5>
-        <!-- Réseaux sociaux -->
+
+        <!-- Liens vers les réseaux sociaux et CV -->
         <div class="social">
-          <!-- Bouton LinkedIn -->
-          <a href="https://www.linkedin.com/in/dorian-abbadessa/"><button class="linkedin">
-            <p>LinkedIn</p>
-          </button></a>
-          <!-- Bouton GitHub -->
-          <a href="https://github.com/DorianABDS"><button class="github">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/dorian-abbadessa/">
+            <button class="linkedin">
+              <p>LinkedIn</p>
+            </button>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/DorianABDS">
+            <button class="github">
               <p>GitHub</p>
-            </button></a>
+            </button>
+          </a>
+
           <!-- Bouton de téléchargement du CV -->
           <button class="button-cv">
             <a href="/assets/src/img/ABBADESSA_Dorian_CV_PF.pdf" download="CV_ABBADESSA_Dorian">Télécharger mon CV</a>
           </button>
         </div>
-        <a href="#accueil"><button class="back-to-top">
+
+        <!-- Bouton de retour en haut de page -->
+        <a href="#accueil">
+          <button class="back-to-top">
             <svg class="svgIcon" viewBox="0 0 384 512">
               <path
                 d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
@@ -143,16 +160,21 @@
         </a>
       </div>
     </section>
-    <!-- À propos -->
+
+    <!-- Section À propos -->
     <section class="about-me" id="about-me">
+      <!-- En-tête de la section -->
       <div class="container-about-me">
         <span>Présentation</span>
         <h2>À propos de moi</h2>
       </div>
-      <!-- Biodescription -->
+
+      <!-- Contenu de la biographie -->
       <div class="texte-about-me">
-        <!-- Photo -->
+        <!-- Photo de profil -->
         <img src="/assets/src/img/do.png" alt="Photo de ABBADESSA Dorian" />
+
+        <!-- Carte de présentation -->
         <div class="about-card">
           <div class="card-status">
             <p class="text-title">Objectif</p>
@@ -161,31 +183,35 @@
               Étudiant en développement web, je suis en première année de bachelor à <a
                 href="https://laplateforme.io/">La Plateforme</a>, Martigues. Je cherche une alternance pour renforcer
               mes compétences en web et mobile, et créer des interfaces modernes et efficaces. Optimiste et motivé,
-              j’aime relever des défis et améliorer constamment mes compétences.
+              j'aime relever des défis et améliorer constamment mes compétences.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Compétences -->
+
+    <!-- Section Compétences -->
     <section class="skills" id="skills">
+      <!-- En-tête de la section -->
       <div class="container-skills">
         <span>Mes compétences</span>
         <h2>Skills</h2>
       </div>
-      <!-- Mes compétences -->
+
+      <!-- Grille de compétences -->
       <div class="box-skills">
+        <!-- Compétences développement web -->
         <div class="container-card-skills">
           <div class="card-skills">
             <h3>Développement Web</h3>
             <div class="grid">
+              <!-- Icônes des langages et technologies web -->
               <div>
                 <img src="https://skillicons.dev/icons?i=html" alt="icone html" />
                 <p>HTML</p>
               </div>
               <div>
                 <img src="https://skillicons.dev/icons?i=css" alt="icone css" />
-
                 <p>CSS</p>
               </div>
               <div>
@@ -197,16 +223,16 @@
                 <p>JQuery</p>
               </div>
               <div>
-                <img src="https://skillicons.dev/icons?i=python" alt="icone python" />
-                <p>Python</p>
-              </div>
-              <div>
                 <img src="https://skillicons.dev/icons?i=sass" alt="icone sass" />
                 <p>Sass</p>
               </div>
               <div>
                 <img src="https://skillicons.dev/icons?i=bootstrap" alt="icone bootstrap" />
                 <p>Bootstrap</p>
+              </div>
+              <div>
+                <img src="https://skillicons.dev/icons?i=tailwind" alt="icone tailwind" />
+                <p>Tailwind</p>
               </div>
               <div>
                 <img src="https://skillicons.dev/icons?i=php" alt="icone php" />
@@ -216,13 +242,36 @@
                 <img src="https://skillicons.dev/icons?i=mysql" alt="icone mysql" />
                 <p>MySQL</p>
               </div>
+              <div>
+                <img src="https://skillicons.dev/icons?i=python" alt="icone python" />
+                <p>Python</p>
+              </div>
+              <div>
+                <img src="https://skillicons.dev/icons?i=lua" alt="icone lua" />
+                <p>Lua</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Compétences outils -->
         <div class="container-card-skills">
           <div class="card-skills">
             <h3>Outils</h3>
             <div class="grid">
+              <!-- Icônes des outils de développement -->
+              <div>
+                <img src="https://skillicons.dev/icons?i=git" alt="icone git" />
+                <p>Git</p>
+              </div>
+              <div>
+                <img src="https://skillicons.dev/icons?i=github" alt="icone github" />
+                <p>GitHub</p>
+              </div>
+              <div>
+                <img src="https://skillicons.dev/icons?i=vscode" alt="icone vscode" />
+                <p>VS Code</p>
+              </div>
               <div>
                 <img src="https://skillicons.dev/icons?i=figma" alt="icone figma" />
                 <p>Figma</p>
@@ -232,68 +281,66 @@
                 <p>Markdown</p>
               </div>
               <div>
-                <img src="https://skillicons.dev/icons?i=github" alt="icone github" />
-                <p>GitHub</p>
-              </div>
-              <div>
-                <img src="https://skillicons.dev/icons?i=git" alt="icone git" />
-                <p>Git</p>
+                <img src="https://skillicons.dev/icons?i=notion" alt="icone notion" />
+                <p>Notion</p>
               </div>
               <div>
                 <img src="https://skillicons.dev/icons?i=ps" alt="icone photoshop" />
                 <p>Photoshop</p>
-              </div>
-              <div>
-                <img src="https://skillicons.dev/icons?i=notion" alt="icone notion" />
-                <p>Notion</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
+
+    <!-- Section Projets -->
     <section id="projets" class="projects-section">
       <div class="projects-container">
-
+        <!-- En-tête de la section -->
         <span>Mes Projets</span>
         <h2 class="section-heading">Projets</h2>
-    
+
+        <!-- Sélecteur de catégorie de projets -->
         <div class="hero-buttons" id="hero-buttons">
           <button id="show-academics-projects">Projets académique</button>
           <button id="show-sides-projects">Projet personnel</button>
         </div>
-    
+
+        <!-- Conteneurs pour les différentes catégories de projets -->
+        <!-- Ces divs sont remplis dynamiquement par JavaScript (projects.js) -->
         <div id="academic-projects" class="projects-grid visible"></div>
         <div id="sides-projects" class="projects-grid hidden"></div>
-    
       </div>
     </section>
   </main>
-  <!-- **MAIN -->
-  <!-- **FOOTER -->
+
   <footer>
     <div class="footer-container">
-      <!-- partie de gauche -->
       <div class="box-footer">
-        <!-- partie de droite -->
+        <!-- Informations de contact -->
         <div class="footer-content">
           <h4>Contact</h4>
-          <!-- Réseaux sociaux du footer -->
+          <!-- Liens vers les réseaux sociaux -->
           <div class="social-media">
-            <a href="https://www.linkedin.com/in/dorian-abbadessa/"><img src="/assets/src/img/linkedin-brands-solid.svg"
-                width="20" alt="Icone de LinkedIn" /></a>
+            <a href="https://www.linkedin.com/in/dorian-abbadessa/">
+              <img src="/assets/src/img/linkedin-brands-solid.svg" width="20" alt="Icone de LinkedIn" />
+            </a>
             <a
-              href="https://mail.google.com/mail/u/1/#inbox?compose=prDfqJrXbNNzTdqRljjSPTZCfGfTnsrLhfdRnVqSlwgHHFDbxVWLxVmggQbKThQrGHHpPJVNcqfMrvBVQCttWtbZjCHPNKRCZPzqJJJPNrvFJkTSPXTKfrFPQKLGMQlVhSMcbhNJFsFptqwKJmPpzQgQ"><img
-                src="/assets/src/img/gmail.svg" width="20" alt="Icone de Gmail" /></a>
+              href="https://mail.google.com/mail/u/1/#inbox?compose=prDfqJrXbNNzTdqRljjSPTZCfGfTnsrLhfdRnVqSlwgHHFDbxVWLxVmggQbKThQrGHHpPJVNcqfMrvBVQCttWtbZjCHPNKRCZPzqJJJPNrvFJkTSPXTKfrFPQKLGMQlVhSMcbhNJFsFptqwKJmPpzQgQ">
+              <img src="/assets/src/img/gmail.svg" width="20" alt="Icone de Gmail" />
+            </a>
           </div>
         </div>
       </div>
-      <!-- copyright -->
+
+      <!-- Copyright -->
       <div class="copyright">
         <p>Copyright©2025 - Dorian ABBADESSA.</p>
       </div>
     </div>
+
+    <!-- Ligne de séparation -->
     <div class="ligne"></div>
   </footer>
 </body>
