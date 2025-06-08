@@ -1,4 +1,4 @@
-name: Deploy to Hostinger
+name: Deploy to Hostinger via FTP
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       - name: Deploy with FTP
         uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          server: ${{ secret.FTP_HOST }}
-          username: ${{ secret.FTP_USERNAME }}
-          password: ${{ secret.FTP_PASSWORD }}
-          server-dir: ${{ secret.FTP_REMOTE_DIR || '/' }}
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_REMOTE_DIR || '/' }}
