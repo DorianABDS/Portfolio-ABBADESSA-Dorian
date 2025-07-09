@@ -46,7 +46,7 @@
         "id": 12,
         "isOnline": true,
         "type": "side-project",
-        "lien-repo": "https://github.com/DorianABDS",
+        "lien-repo": "https://github.com/DorianABDS/france-travail-chrome-extension",
         "lien-site": "https://chromewebstore.google.com/detail/auto-actualisation-france/nheggicfofogaeahlempbhgfefbpokbh?hl=fr&utm_source=ext_sidebar",
         "name": "Auto-actualisation <br> France Travail",
         "description": "Ajoute un bouton pour automatiser l'actualisation sur France Travail.",
